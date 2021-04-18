@@ -1,0 +1,62 @@
+//////////////////////////////////////////////////////////////
+///                        COLORS                          ///
+//////////////////////////////////////////////////////////////
+$index-navlink-bgcolor: #27272727;
+
+$game-collection-search-bar_border-color: #00aeff86;
+
+$link-panel_shadow-color: #ffffff;
+
+$inset-style-button_color: white;
+$inset-style-button_border-color: black; 
+$inset-style-button_shadow-color: #00000070;
+$inset-style-button_shadow-color_HOVER: #fff; 
+$inset-style-button_color_ACTIVE: rgba(201, 201, 201, 0.75);
+$inset-style-button_shadow-color_ACTIVE: rgba(100, 100, 100, .75);
+
+//////////////////////////////////////////////////////////////
+///                         SIZES                          ///
+//////////////////////////////////////////////////////////////
+
+//index-nav-links
+$index-nav-links_width: 64px;
+$index-nav-links_fontSize: 32px;
+
+//game-collection-search-bar
+$game-collection-search-bar_radius: 4px; 
+$game-collection-search-bar_font-size: 28px;
+$game-collection-search-bar_padding: 12px 24px;
+$game-collection-search-bar_border-size: 1px;
+$game-collection-search-bar_shadow-spread: 4px;
+$game-collection-search-bar_shadow-blur: 4px;
+
+//link-panel
+$link-panel_shadow-size: 7px;
+$panel-link_wdith: 300px;
+$panel-link_height: 150px;
+$panel-link_wdith-hover: 350px;
+$panel-link_height-hover: 200px;
+
+//inset-style-button_margin
+$inset-style-button_margin: 16px;
+$inset-style-button_padding: 8px;
+$inset-style-button_font-size: 24px;
+$inset-style-button_raidus: 8px;
+$inset-style-button_border-size: 1px;
+$inset-style-button_shadow-size: 5px;
+$inset-style-button_shadow-blurspread: 1px;
+
+
+//////////////////////////////////////////////////////////////
+///                   ICON & MAIN LOGO                     ///
+//////////////////////////////////////////////////////////////
+$logo-size: 150px;
+$logo-borderRadius: 50%;
+
+//////////////////////////////////////////////////////////////
+///                     MISCELLANEOUS                      ///
+//////////////////////////////////////////////////////////////
+$_global_font: 'Roboto', 'Open Sans Condensed', sans-serif;
+$link-panel_transition-time: .3s;
+$link-panel_resize: 1.25;
+$nb-item-game-grid: 5;

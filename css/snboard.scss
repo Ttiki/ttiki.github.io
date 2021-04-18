@@ -1,0 +1,33 @@
+@import "_global";
+
+#sn-board-wrap{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "fr-sn eng-sn"
+    "mixed-sn mixed-sn";
+}
+
+.mixed-sn { grid-area: mixed-sn;}
+.eng-sn { grid-area: eng-sn;}
+.fr-sn { grid-area: fr-sn;}
+
+.sn-panel{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 256px;
+    margin: auto;
+    padding: 8px;
+    
+}
+
+.board-title{
+    width: 100%;
+    flex-grow: 1;
+    
+}

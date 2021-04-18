@@ -1,0 +1,91 @@
+@import "_global";
+@import "animation";
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    height: 100%;
+}   
+
+body{
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    margin: 0;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    font-family: $_global_font;
+}
+
+img:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: $panel-link_wdith;
+    height: $panel-link_height;
+    background-image: url('../resources/media/img/nomediaavailable.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.clr-25{
+    height: 25px;
+}
+
+.link-panel{
+    @include link-panel-transition;
+    width: $panel-link_wdith;
+    height: $panel-link_height;
+    margin: 8px;
+    z-index: 2;
+    img{
+        width: $panel-link_wdith;
+        height: $panel-link_height;
+        z-index: 1px;
+    }
+
+    &:hover{
+        z-index: 10;
+        transform: scale($link-panel_resize);
+        -webkit-box-shadow: 0px 0px $link-panel_shadow-size $link-panel_shadow-size $link-panel_shadow-color; 
+        box-shadow: 0px 0px $link-panel_shadow-size $link-panel_shadow-size $link-panel_shadow-color;  
+    }
+}
+
+.inset-style-button{
+    margin: $inset-style-button_margin;
+    padding: $inset-style-button_padding;
+    font-size: $inset-style-button_font-size;
+    color: $inset-style-button_color;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: $inset-style-button_raidus;
+    border: $inset-style-button_border-size solid $inset-style-button_border-color;
+    -webkit-box-shadow: 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color; 
+    box-shadow: 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color;
+
+    &:hover{
+        -webkit-box-shadow: inset 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color_HOVER; 
+        box-shadow: inset 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color_HOVER;
+    }
+
+    &:active{
+        color: $inset-style-button_color_ACTIVE;
+        -webkit-box-shadow: inset 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color_ACTIVE; 
+        box-shadow: inset 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color_ACTIVE;
+    }
+}
