@@ -1,0 +1,10 @@
+#Junk
+.scss
+.sass
+
+#video files
+.mp4
+.webm
+
+.kra
+.code-workspace
