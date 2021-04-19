@@ -1,0 +1,102 @@
+@import "_global";
+
+body{
+    width: 200%;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    margin: 100px auto;
+}
+
+#ttiki-logo{
+    width: $logo-size;
+    height: $logo-size;
+
+    border-radius: $logo-borderRadius;
+}
+
+.title-difference{
+    h1, h2, h3, h4, h5, h6, p{
+        mix-blend-mode: screen;
+        font-family: sans-serif;
+        word-break: break-all;
+    }
+}
+
+/* -ms-overflow-style: none;  /* IE and Edge */
+/* scrollbar-width: none;  Firefox */
+/* }
+
+body::-webkit-scrollbar {
+display: none;
+} */ 
+
+#bg-video{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#bg-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;    
+} 
+
+#centerpart-index{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#rightpart-sn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.index-nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: $index-nav-links_width;
+    font-size: $index-nav-links_fontSize;
+    text-align: center;
+    margin: auto;
+    background-color: $index-navlink-bgcolor;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.left-link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.right-link{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
