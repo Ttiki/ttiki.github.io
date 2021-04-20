@@ -31,6 +31,10 @@ function renderGame(doc){
 
     //We add the link-panel to the correct list display div
     outputList.appendChild(link);
+
+    displayGame(link);
+
+    return link;
 }
 
 //Getting data 
@@ -44,21 +48,37 @@ function renderGame(doc){
 //Getting data REAL-TIME
 firestoreDb.collection('library').orderBy('name').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
+    let i = 0;
     changes.forEach(change => {
         console.log(change.doc.data());
 
         //Only show 'added' doc and not removed ones
         if(change.type == 'added'){
-            gameList.push(change.doc);
-            renderGame(change.doc);
+            gameList.push(renderGame(change.doc));
+            i++;
         }
     })
 })
 
-inputSearchBar.addEventListener('input', function () {
-    for(let i = 0; i < gameList.length; i){
-        if(this.value.test(gameList[i].doc.data().name)){
-            renderGame(gameList[i].change.doc);
+function searchTable(){
+    // Declare variables
+    var filter, i;
+    filter = inputSearchBar.value.toUpperCase();
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < gameList.length; i++) {
+        if (gameList[i].getAttribute("title").toUpperCase().indexOf(filter) > -1) {
+            displayGame(gameList[i]);
+        }else{
+            hideGame(gameList[i]);
         }
     }
-});
+}
+
+function displayGame(link){
+    link.setAttribute("style", "display:block");
+}
+
+function hideGame(link){
+    link.setAttribute("style", "display:none");
+}

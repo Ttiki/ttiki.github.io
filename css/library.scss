@@ -22,7 +22,7 @@ body{
     font-size: $game-collection-search-bar_font-size;
     padding: $game-collection-search-bar_padding;
     width: 25%;
-    border: none;
+    border: 1px solid darkgrey;
     
     &:focus{
         outline: none;

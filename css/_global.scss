@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////
 ///                        COLORS                          ///
 //////////////////////////////////////////////////////////////
-$index-navlink-bgcolor: #27272727;
+$index-navlink-bgcolor: #27272770;
 
 $game-collection-search-bar_border-color: #00aeff86;
 
@@ -19,8 +19,9 @@ $inset-style-button_shadow-color_ACTIVE: rgba(100, 100, 100, .75);
 //////////////////////////////////////////////////////////////
 
 //index-nav-links
-$index-nav-links_width: 64px;
-$index-nav-links_fontSize: 32px;
+$index-nav-links_width: 75px;
+$index-nav-links-bottom_width: 100vw;
+$index-nav-links_fontSize: 18px;
 
 //game-collection-search-bar
 $game-collection-search-bar_radius: 4px; 

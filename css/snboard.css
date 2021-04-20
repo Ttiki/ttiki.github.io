@@ -8,7 +8,7 @@
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "fr-sn eng-sn" "mixed-sn mixed-sn";
+      grid-template-areas: "fr-sn eng-sn" "mixed-sn mixed-sn";
 }
 
 .mixed-sn {

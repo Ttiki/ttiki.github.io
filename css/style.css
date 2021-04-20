@@ -36,8 +36,6 @@ body {
   overflow: hidden;
   z-index: 0;
   margin: 0;
-  background-color: black;
-  background-size: cover;
   color: white;
   font-family: "Roboto", "Open Sans Condensed", sans-serif;
 }
@@ -100,6 +98,7 @@ header {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   border-radius: 8px;
   border: 1px solid black;
   -webkit-box-shadow: 0px 0px 5px 1px #00000070;
