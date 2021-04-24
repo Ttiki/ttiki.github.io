@@ -46,7 +46,7 @@ function renderGame(doc){
 // })
 
 //Getting data REAL-TIME
-firestoreDb.collection('library').where("visibility", "==", "public").orderBy('name').onSnapshot(snapshot => {
+firestoreDb.collection('library').orderBy('name').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
     let i = 0;
     changes.forEach(change => {
