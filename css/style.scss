@@ -88,3 +88,24 @@ header{
         box-shadow: inset 0px 0px $inset-style-button_shadow-size $inset-style-button_shadow-blurspread $inset-style-button_shadow-color_ACTIVE;
     }
 }
+
+
+.collection_search-bar{
+    border-radius: $game-collection-search-bar_radius;
+    font-size: $game-collection-search-bar_font-size;
+    padding: $game-collection-search-bar_padding;
+    width: 25%;
+    border: 1px solid darkgrey;
+    
+    &:focus{
+        outline: none;
+        -webkit-box-shadow: 0px 0px $game-collection-search-bar_shadow-spread $game-collection-search-bar_shadow-blur  $game-collection-search-bar_border-color; 
+        box-shadow: 0px 0px $game-collection-search-bar_shadow-spread $game-collection-search-bar_shadow-blur  $game-collection-search-bar_border-color;
+        border: $game-collection-search-bar_border-size solid $game-collection-search-bar_border-color;
+    }    
+
+    &-softwares{
+        @extend .collection_search-bar;
+        font-size: 20px;
+    }
+}
