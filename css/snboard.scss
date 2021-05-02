@@ -13,21 +13,20 @@
     "mixed-sn mixed-sn";
 }
 
-.mixed-sn { grid-area: mixed-sn;}
+.mixed-sn { 
+    grid-area: mixed-sn;
+    margin: auto;
+}
 .eng-sn { grid-area: eng-sn;}
 .fr-sn { grid-area: fr-sn;}
 
 .sn-panel{
     display: flex;
     flex-wrap: wrap;
-    min-height: 256px;
-    margin: auto;
     padding: 8px;
-    
+    align-content: space-between;
 }
 
 .board-title{
-    width: 100%;
     flex-grow: 1;
-    
 }
