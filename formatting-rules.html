@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <!-- Metas tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="Ttiki's HUB">
+        <meta name="description" content="Ttiki's HUB, a place to connect, discover and download my apps!">
+        <meta name="keywords" content="Ttiki, hub, personal, page, GitHub, hub, social, network, list, software, application, games, database, download, free, game, development, code, development">
+        <meta name="language" content="English">
+        <meta name="author" content="Clément 'Ttiki' Combier clem64.combier@gmail.com">
+        <meta name="robots" content="index, follow">
+
+        <!-- Links tags -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/header.css"> -->
+
+        <link rel="icon" href="resources/media/icon/ttiki-logo.ico">
+
+        <!-- Others tags -->
+        <title>⚙Ttiki's HUB - formatting Rules</title>
+    </head>
+    <body id="parallax-body">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="page-header" id="parallax-header">
+            <div id="titles-subtitles">
+                <a href="index.html" title="🏠Home page"><img id="ttiki-logo-header-icon" src="" alt=""/></a>
+                <h1 id="main-title" class="main-title">TTIKI'S HUB</h1>
+                <h3 id="splash-subtitles"></h3>
+            </div>
+            <nav>
+                <a href="index.html" title="🏠Home page" class="nav-link">🏠Home</a>
+                <a href="about.html" title="❓About project" class="nav-link">❓About</a>
+                <div class="nav-dropdown" data-dropdown>
+                    <button class="nav-link" data-dropdown-button>📋Projects</button>
+                    <div class="nav-dropdown-menu">
+                        <div class="info-grid-solo">
+                            <a href="software.html" class="nav-link">🛠Software</a>
+                            <a href="games.html" class="nav-link">🎮Games</a>
+                            <a href="books.html" class="nav-link">📕Books</a>
+                            <a href="movies.html" class="nav-link">🎥Movies</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <h1>Special formatting rules</h1>
+                <p>This website uses a custom type of formatting for quick effects and color changement.
+                This feature is mainly for fun and for me to re-learn javascript and get better at it.<br/>
+                That's also the reason for all the script loading. You can find below the list of all
+                rules I've implemented.<br/>
+                This ruling is based on <a href="https://minecraft.fandom.com/wiki/Formatting_codes" title="Minecraft formatting codes">Minecraft's one.</a></p>
+                
+                <table id="formatting-rules-table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="formatting-rules-table-body"></tbody>
+                </table>
+            </article>
+        </section>
+        <div class="clr-16px"></div>
+        <footer>
+
+        </footer>
+    </body>
+    <!--Call to js-->
+    <script src="js/Utility/file_manager.js" defer></script>
+    <script src="js/Utility/string_manager.js" defer></script>
+    <script src="js/header_effects.js" defer async></script>
+</html>

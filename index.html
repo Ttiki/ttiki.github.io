@@ -8,82 +8,68 @@
         <!-- Metas tags -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <meta name="title" content="Ttiki's HUB">
-        <meta name="description" content="Main page of my personal GitHub page. On the right side you will find the HUB to my social networks!">
-        <meta name="keywords" content="Ttiki, hub, personal, page, GitHub, hub, social, network, list, software, application, games, database, download, free, game, development, code, development">
-        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="Ttiki's HUB">
+        <meta name="description" content="Ttiki's HUB, a place to connect, discover and download my apps!">
+        <meta name="keywords" content="Ttiki, hub, personal, page, GitHub, hub, social, network, list, software, application, games, database, download, free, game, development, code, development">
         <meta name="language" content="English">
         <meta name="author" content="Clément 'Ttiki' Combier clem64.combier@gmail.com">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
 
         <!-- Links tags -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/snboard.css">
-        
-        <link rel="icon" href="resources/media/icon/icon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="css/header.css"> -->
+
+        <link rel="icon" href="resources/media/icon/ttiki-logo.ico">
 
         <!-- Others tags -->
-        <title>Ttiki's HUB</title>
+        <title>🏠Ttiki's HUB</title>
     </head>
-    <body>
+    <body id="parallax-body">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="centerpart-index" class="center-part index-panel panel">
+        <header class="page-header" id="parallax-header">
+            <div id="titles-subtitles">
+                <a href="index.html" title="🏠Home page"><img id="ttiki-logo-header-icon" src="" alt=""/></a>
+                <h1 id="main-title" class="main-title">TTIKI'S HUB</h1>
+                <h3 id="splash-subtitles"></h3>
+            </div>
             <nav>
-                <a href="library.html" class="index-nav-links grid-index-nav-links grid-left-link" title="Vers la bibliothèque (FR)"><span class="link-arrow">&#10092;&#10092;</span><br/>The Library</a><!-- << symbol -->
-                <!-- <a href="softwares.html" class="index-nav-links grid-index-nav-links grid-bottom-link" title="To the softwares">Softwares<span class="link-arrow">&#9759;</span></a> -->
-                <a href="#rightpart-sn" class="index-nav-links grid-index-nav-links grid-right-link" title="To the social network board"><span class="link-arrow">&#10093;&#10093;</span><br/>Social network board</a><!-- >> symbol -->
+                <a href="index.html" title="🏠Home page" class="nav-link">🏠Home</a>
+                <div class="nav-dropdown" data-dropdown>
+                    <button class="nav-link" data-dropdown-button>❓About</button>
+                    <div class="nav-dropdown-menu">
+                        <div class="info-grid-solo">
+                            <a href="software.html" class="nav-link">About me</a>
+                            <a href="software.html" class="nav-link">About this website</a>
+                            <a href="formatting-rules.html" class="nav-link">Custom formatting code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" data-dropdown>
+                    <button class="nav-link" data-dropdown-button>📋Projects</button>
+                    <div class="nav-dropdown-menu">
+                        <div class="info-grid-solo">
+                            <a href="software.html" class="nav-link">🛠Software</a>
+                            <a href="games.html" class="nav-link">🎮Games</a>
+                            <a href="books.html" class="nav-link">📕Books</a>
+                            <a href="movies.html" class="nav-link">🎥Movies</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <video playsinline autoplay muted loop id="bg-video" style="opacity: 1;" oncontextmenu="return false;">
-                <source  src="https://www.googleapis.com/drive/v3/files/1a9boVooq28dbfPx3rbKUMOD2MdNw7gN3?alt=media&key=AIzaSyCF3zlsKDZiLCIk8AYUufJdZuyAgvtG2nA"                       
-                type="video/webm">
-                <source  src="https://www.googleapis.com/drive/v3/files/1vDoYHAXwWWYkbNMJPWoFJ56xXef5k4zh?alt=media&key=AIzaSyCF3zlsKDZiLCIk8AYUufJdZuyAgvtG2nA"
-                type="video/mp4">
+        </header>
+        
+        <div class="clr-16px"></div>
+        <footer>
 
-                Sorry, your browser doesn't support embedded videos!
-            </video>
-            <header>
-                <img src="resources/media/icon/icon.jpg" id="ttiki-logo" alt="Ttiki logo"/>   
-            </header>
-            <div class="title-difference">
-                <!-- <h1>Ttiki</h1> -->
-                <h2>I made games and softwares for fun.</h2>
-                <p>Website under construction</p>
-            </div>
-            
-        </div>      
-        <div id="rightpart-sn" class="right-part sn-wrap panel">
-            <a href="#centerpart-index" class="index-nav-links left-link" title="To home page" style="left: 0;"><span class="link-arrow">&#10092;&#10092;</span><br/>Home</a><!-- << symbol -->
-            <h1 style="text-align: center;">Social network board</h1>
-            <div id="sn-board-wrap">
-                <fieldset class="mixed-sn sn-panel">
-                    <legend class="board-title">FR/ENG</legend>
-                    <a href="https://www.jostatu.com/" alt="_blank" title="Jostatu" class="snboard-link link-panel"><img src="resources\media\img\sn\jostatu.png" alt="Jostatu" class="snboard-link-img" /></a>
-                    <a href="https://twitter.com/Kutsatuta" alt="_blank" title="Ttiki • Twitter" class="snboard-link link-panel"><img src="resources\media\img\sn\Twitter.png" alt="Ttiki • Twitter" class="snboard-link-img" /></a>
-                    <a href="https://steamcommunity.com/id/Ttiki" alt="_blank" title="Ttiki • Steam" class="snboard-link link-panel"><img src="resources\media\img\sn\steam.png" alt="Ttiki • Steam" class="snboard-link-img" /></a>
-                    <a href="https://www.youtube.com/channel/UCNOwwGU3kmy59lJRdij_cwQ" alt="_blank" title="Ttiki's maps • YouTube" class="snboard-link link-panel"><img src="resources\media\img\sn\ttiki-maps-yt.png" alt="Ttiki's maps • YouTube" class="snboard-link-img" /></a>  
-                </fieldset>
-                <fieldset class="eng-sn sn-panel">
-                    <legend class="board-title">ENG</legend>
-                    <a href="https://ttiki-blog.blogspot.com/" alt="_blank" title="Ttiki's Blog" class="snboard-link link-panel"><img src="resources\media\img\sn\ttiki-blog.png" alt="Ttiki's Blog" class="snboard-link-img" /></a>
-                    <a href="https://www.moddb.com/members/ttiki" alt="_blank" title="Ttiki • ModDB" class="snboard-link link-panel"><img src="resources\media\img\sn\moddb.png" alt="Ttiki • ModDB" class="snboard-link-img" /></a>
-                    <a href="https://www.reddit.com/user/Ttikii" alt="_blank" title="Ttiki • Reddit" class="snboard-link link-panel"><img src="resources\media\img\sn\Reddit.png" alt="Ttiki • Reddit" class="snboard-link-img" /></a>
-                </fieldset>
-                <fieldset class="fr-sn sn-panel">
-                    <legend class="board-title">FR</legend>
-                    <a href="https://www.youtube.com/channel/UCeIO_K2bJR7gakbmD8vsrgw" alt="_blank" title="Ttiki • Chaîne Youtube" class="snboard-link link-panel"><img src="resources\media\img\sn\ttiki-yt.png" alt="Ttiki • Chaîne Youtube" class="snboard-link-img" /></a>
-                    <a href="https://www.twitch.tv/ttiki" alt="_blank" title="Ttiki • Chaîne Twitch" class="snboard-link link-panel"><img src="resources\media\img\sn\twitch.png" alt="Ttiki • Chaîne Twitch" class="snboard-link-img" /></a>
-                </fieldset>
-            </div>
-            
-        </div> 
+        </footer>   
     </body>
+    <!--Call to js-->
+    <script src="js/Utility/file_manager.js" defer></script>
+    <script src="js/Utility/string_manager.js" defer></script>
+    <script src="js/header_effects.js" defer async></script>
+    <script src="js/splash.js" async defer></script>
 </html>
