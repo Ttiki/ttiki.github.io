@@ -67,6 +67,7 @@ header{
 }
 
 nav{
+    z-index: 10;
     width: 100%;
     margin: 0;
     position: relative;
@@ -86,7 +87,6 @@ nav{
         font-family: inherit;
         font-size: inherit;
         border: 0;
-        border-left: 1px solid $default_border-color;
         border-right: 1px solid $default_border-color;
         color: $highlight-dark-grey;
         text-decoration: none;
@@ -94,6 +94,7 @@ nav{
         transition: .2s;
         &:hover{
             background-color: $highlight_bg-color;
+            cursor: pointer;
         }
     }
 
@@ -148,6 +149,8 @@ nav{
 
 #splash-subtitles{
     color: white;
+    margin-top: -25px;
+    margin-bottom: 50px;
 }
 
 /* --------------------------------- § Color -------------------------------- */

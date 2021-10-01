@@ -6,6 +6,7 @@ $highlight_bg-color: #eee;
 $default_border-color: #bbb;
 $highlight-dark-grey: #333;
 $bg-color: rgb(255, 255, 255);
+$game-collection-search-bar_border-color: #00aeff86;
 
 $link-panel_shadow-color: #00aeff86;
 
@@ -44,6 +45,13 @@ $colors: (
 $clear-sizes: 16px, 32px, 64px, 96px, 128px, 256px 512px;
 $ttiki-icon_wah: 128px;
 
+$game-collection-search-bar_radius: 4px; 
+$game-collection-search-bar_font-size: 28px;
+$game-collection-search-bar_padding: 12px 24px;
+$game-collection-search-bar_border-size: 1px;
+$game-collection-search-bar_shadow-spread: 4px;
+$game-collection-search-bar_shadow-blur: 4px;
+
 /* ------------------------ Big Ttitle letter spacing ----------------------- */
 $default-spacing:0.1em;
 $hover-spacing:0.25em;
@@ -65,3 +73,4 @@ $panel-link_height-hover: 200px;
 $link-panel_transition-time: .3s;
 $link-panel_resize: 1.25;
 $default_border-radius: 7px;
+$nb-item-game-grid: 5;

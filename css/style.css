@@ -148,6 +148,7 @@ header {
 }
 
 nav {
+  z-index: 10;
   width: 100%;
   margin: 0;
   position: relative;
@@ -169,7 +170,6 @@ nav .nav-link {
   font-family: inherit;
   font-size: inherit;
   border: 0;
-  border-left: 1px solid #bbb;
   border-right: 1px solid #bbb;
   color: #333;
   text-decoration: none;
@@ -180,6 +180,7 @@ nav .nav-link {
 
 nav .nav-link:hover {
   background-color: #eee;
+  cursor: pointer;
 }
 
 nav .nav-dropdown {
@@ -245,6 +246,8 @@ nav .nav-dropdown.active, nav .nav-dropdown:hover > .nav-link + .nav-dropdown-me
 
 #splash-subtitles {
   color: white;
+  margin-top: -25px;
+  margin-bottom: 50px;
 }
 
 /* --------------------------------- § Color -------------------------------- */
@@ -392,6 +395,26 @@ article h1 {
   padding: .5em;
   border-bottom: 1px solid #bbb;
   background-color: #eee;
+}
+
+/* ---------------------------------- Input --------------------------------- */
+.collection_search-bar, .collection_search-bar-softwares {
+  border-radius: 4px;
+  font-size: 28px;
+  padding: 12px 24px;
+  width: 25%;
+  border: 1px solid darkgrey;
+}
+
+.collection_search-bar:focus, .collection_search-bar-softwares:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 4px 4px #00aeff86;
+  box-shadow: 0px 0px 4px 4px #00aeff86;
+  border: 1px solid #00aeff86;
+}
+
+.collection_search-bar-softwares {
+  font-size: 20px;
 }
 
 /* ----------------------------- Clear divs size ---------------------------- */

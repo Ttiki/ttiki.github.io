@@ -25,6 +25,7 @@
 
         <!-- Others tags -->
         <title>⚙Ttiki's HUB - formatting Rules</title>
+        <script src="js/Utility/csi.js"></script>
     </head>
     <body id="parallax-body">
         <!--[if lt IE 7]>
@@ -38,7 +39,16 @@
             </div>
             <nav>
                 <a href="index.html" title="🏠Home page" class="nav-link">🏠Home</a>
-                <a href="about.html" title="❓About project" class="nav-link">❓About</a>
+                <div class="nav-dropdown" data-dropdown>
+                    <button class="nav-link" data-dropdown-button>❓About</button>
+                    <div class="nav-dropdown-menu">
+                        <div class="info-grid-solo">
+                            <a href="software.html" class="nav-link">About me</a>
+                            <a href="software.html" class="nav-link">About this website</a>
+                            <a href="formatting-rules.html" class="nav-link">Custom formatting code</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="nav-dropdown" data-dropdown>
                     <button class="nav-link" data-dropdown-button>📋Projects</button>
                     <div class="nav-dropdown-menu">
@@ -50,6 +60,8 @@
                         </div>
                     </div>
                 </div>
+                <a href="la-bibliotheque.html" class="fr-only nav-link" title="📚La bibliothèque">📚La bibliothèque</a>
+                <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" class="nav-link" title="🌐Social networks board">🌐The Social Networks board</a>
             </nav>
         </header>
         <section>

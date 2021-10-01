@@ -1,5 +1,5 @@
 const outputList= document.querySelector("#main-library")
-const inputSearchBar = document.querySelector("#game-collection_search-bar")
+const inputSearchBar = document.getElementById("game-collection_search-bar")
 // const submitSearchBar = document.querySelector("#game-collection_search-submit")
 
 var gameList = []
@@ -63,8 +63,9 @@ firestoreDb.collection('library').orderBy('name').onSnapshot(snapshot => {
 function searchTable(){
     // Declare variables
     var filter, i
+    
     filter = inputSearchBar.value.toUpperCase()
-
+    console.log(filter)
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < gameList.length; i++) {
         if (gameList[i].getAttribute("title").toUpperCase().indexOf(filter) > -1) {
