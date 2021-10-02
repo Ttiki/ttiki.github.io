@@ -19,18 +19,13 @@
 
         <!-- Links tags -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/library.css">
+        <!-- <link rel="stylesheet" href="css/header.css"> -->
+
         <link rel="icon" href="resources/media/icon/ttiki-logo.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
         <!-- Others tags -->
-        <title>Ttiki's HUB - La Bibliothèque</title>
-
-        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-        <!-- Add Firebase products that you want to use -->
-        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        <title>🏠Ttiki's HUB</title>
+        
     </head>
     <body id="parallax-body">
         <!--[if lt IE 7]>
@@ -69,26 +64,15 @@
                 <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new" class="nav-link" title="🌐Social networks board">🌐The Social Networks board</a>
             </nav>
         </header>
-        <div id="bg-body">
-            <div class="search-bar-header">
-                <h1 id="library-title">La Bibliothèque</h1>
-                <p class="bg-img-licence">Background-image by <a href="https://picsum.photos/" title="Lorem Picsum">Lorem Picsum</a></p><br/>
-                <input type="text" name="search" onkeyup="searchTable()" placeholder="Chercher un jeu" id="game-collection_search-bar" class="collection_search-bar">
-                <!-- <input type="submit" hidden name="search-submit" id="game-collection_search-submit"> -->
-            </div>
-            <section id="main-library">
-                
-            </section>
-        </div>
         
+        <div class="clr-16px"></div>
+        <footer>
+
+        </footer>   
     </body>
     <!--Call to js-->
     <script src="js/Utility/file_manager.js" defer></script>
     <script src="js/Utility/string_manager.js" defer></script>
     <script src="js/header_effects.js" defer async></script>
     <script src="js/splash.js" async defer></script>
-
-    <!-- Firebase scripts -->
-    <script src="js/FireBase/firebase_init.js"></script>
-    <script src="js/FireBase/library.js"></script>
 </html>

@@ -8,6 +8,9 @@
         {"name" :"ttiki-logo-softwares.png", "alt" : "Ttiki's software logo"},
         {"name" :"ttiki-logo-wshadow.png", "alt" : "Ttiki's logo"},
         {"name" :"ttiki-logo-wshadow-whitering.png", "alt" : "Ttiki's logo"},
-        {"name" :"ttiki-silver.png", "alt": "Silver Ttiki badge"}
+        {"name" :"ttiki-silver.png", "alt": "Silver Ttiki badge"},
+        {"name" : "jostatu-logo-nobackground-all.gif", "alt" : "Jostatu logo"},
+        {"name" : "lord.png", "alt" : "Lord Ttiki"},
+        {"name" : "bogosse.jpeg", "alt" : "Bogoss"}
     ]
 }

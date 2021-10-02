@@ -80,6 +80,12 @@ nav{
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 75%);
 
+    .default-nav{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
     .nav-link{
         padding: 1em;
         margin: 0;
@@ -145,6 +151,65 @@ nav{
         transform: translateY(0);
         pointer-events: auto;
     }
+
+    .mobile-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $highlight-dark-grey;
+        color: $highlight_bg-color;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 5em; 
+
+        .mobile-nav-closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            
+        }
+        a{
+            text-decoration: none;
+            font-size: 22px;
+            color: $highlight_bg-color;
+            display: block;
+            transition: 0.3s;
+            padding: .1em .5em;
+        }
+
+        .mobile-nav-grid-section{
+            display:grid;
+            //grid-template-columns: repeat(2);
+            gap: .5rem;
+        }
+        .mobile-nav-grid-section-heading{
+            padding-left: .5em;
+            font-size: 32px;
+        }
+
+        hr{
+            width: 80%;
+            margin: auto;
+            border: none;
+            border-top: 1px solid rgba(0,0,0,.25);
+            margin: .7em 0;
+        }
+    }
+}
+
+.mobile-burger-button{
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size:30px;
+    cursor:pointer;
+    mix-blend-mode: darken;
 }
 
 #splash-subtitles{
