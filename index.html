@@ -68,7 +68,7 @@
                 <div class="default-nav">
                     <a href="index.html" title="🏠Home page" class="nav-link">🏠Home</a>
                     <div class="nav-dropdown" data-dropdown>
-                        <button class="nav-link" data-dropdown-button>❓About</button>
+                        <button class="nav-link" onclick="redirectBtn('about.html')" data-dropdown-button>❓About</button>
                         <div class="nav-dropdown-menu">
                             <div class="info-grid-solo">
                                 <a href="about.html#me" class="nav-link">About me</a>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="nav-dropdown" data-dropdown>
-                        <button class="nav-link" data-dropdown-button>📋Projects</button>
+                        <button class="nav-link" onclick="redirectBtn('projects.html')" data-dropdown-button>📋Projects</button>
                         <div class="nav-dropdown-menu">
                             <div class="info-grid-solo">
                                 <a href="software.html" class="nav-link">🛠Software</a>
@@ -140,6 +140,7 @@
     <!--Call to js-->
     <script src="js/Utility/file_manager.js" defer></script>
     <script src="js/Utility/string_manager.js" defer></script>
+    <script src="js/Utility/miscellaneous_utility.js" defer></script>
     <script src="js/header_effects.js" defer async></script>
     <script src="js/splash.js" async defer></script>
 </html>
