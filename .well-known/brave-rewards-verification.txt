@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ttiki.github.io
+Token: 2aa506eeb14bcc36720489a6c9eb6b94e5ca68bd61dc84be612accb9c485bc36
