@@ -83,7 +83,7 @@ nav{
     .default-nav{
         margin: 0;
         padding: 0;
-        display: block;
+        display: flex;
     }
     
     .nav-link{
@@ -203,6 +203,7 @@ nav{
 }
 
 .mobile-burger-button{
+    z-index: 1;
     display: none;
     position: fixed;
     top: 10px;

@@ -1,12 +1,30 @@
 @import "_global";
 
+#library-header{
+    margin-bottom: 50px;
+    padding-top: 0;
+    width: 100%;
+    background-image: none;
+    max-height: 0;
+    height: 0;
+}
+.page-header{
+    min-height: 0;
+}
+
 #main-library{
     width: 85%;
     margin: auto;
+    display: -ms-grid;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat($nb-item-game-grid, 1fr);
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 4px;
+    align-items: center;
+    justify-content: center;
+    justify-items: stretch;
+    align-content: center;
 }
 
 #library-title{

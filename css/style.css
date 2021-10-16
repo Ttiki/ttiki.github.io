@@ -166,7 +166,9 @@ nav {
 nav .default-nav {
   margin: 0;
   padding: 0;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 nav .nav-link {
@@ -303,6 +305,7 @@ nav .mobile-nav hr {
 }
 
 .mobile-burger-button {
+  z-index: 1;
   display: none;
   position: fixed;
   top: 10px;
@@ -455,8 +458,8 @@ img:before {
   content: ' ';
   display: block;
   position: absolute;
-  width: 300px;
-  height: 150px;
+  width: 90%;
+  height: 80%;
   background-image: url("../resources/media/img/nomediaavailable.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -645,15 +648,13 @@ table tr:last-child td:last-child {
 .link-panel {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  width: 300px;
-  height: 150px;
+  width: 90%;
   margin: 8px;
-  z-index: 2;
+  z-index: 2px;
 }
 
 .link-panel img {
-  width: 300px;
-  height: 150px;
+  width: 100%;
   z-index: 1px;
 }
 

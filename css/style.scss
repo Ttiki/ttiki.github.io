@@ -266,12 +266,13 @@ table {
 .link-panel{
     @include link-panel-transition;
     width: $panel-link_wdith;
-    height: $panel-link_height;
+    //height: $panel-link_height;
     margin: 8px;
-    z-index: 2;
+    z-index: 2px;
+
     img{
-        width: $panel-link_wdith;
-        height: $panel-link_height;
+        width: 100%;
+        //height: 100%;
         z-index: 1px;
     }
 
