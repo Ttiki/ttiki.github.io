@@ -8,82 +8,139 @@
         <!-- Metas tags -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <meta name="title" content="Ttiki's HUB">
-        <meta name="description" content="Main page of my personal GitHub page. On the right side you will find the HUB to my social networks!">
-        <meta name="keywords" content="Ttiki, hub, personal, page, GitHub, hub, social, network, list, software, application, games, database, download, free, game, development, code, development">
-        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="Ttiki's HUB">
+        <meta name="description" content="Ttiki's HUB, a place to connect, discover and download my apps!">
+        <meta name="keywords" content="Ttiki, hub, personal, page, GitHub, hub, social, network, list, software, application, games, database, download, free, game, development, code, development">
         <meta name="language" content="English">
         <meta name="author" content="Clément 'Ttiki' Combier clem64.combier@gmail.com">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
 
         <!-- Links tags -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/snboard.css">
-        
-        <link rel="icon" href="resources/media/icon/icon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/media_queries.css">
+        <!-- <link rel="stylesheet" href="css/header.css"> -->
+
+        <link rel="icon" href="resources/media/icon/ttiki-logo.ico">
 
         <!-- Others tags -->
-        <title>Ttiki's HUB</title>
+        <title>🏠Ttiki's HUB</title>
+        
     </head>
-    <body>
+    <body id="parallax-body">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="centerpart-index" class="center-part index-panel panel">
+        <header class="page-header" id="parallax-header">
+            <span class="mobile-burger-button" onclick="openNav()">&#9776;</span>
+            <div id="titles-subtitles">
+                <a href="index.html" title="🏠Home page"><img id="ttiki-logo-header-icon" src="" alt=""/></a>
+                <h1 id="main-title" class="main-title">TTIKI'S HUB</h1>
+                <h3 id="splash-subtitles"></h3>
+            </div>
             <nav>
-                <a href="library.html" class="index-nav-links grid-index-nav-links grid-left-link" title="Vers la bibliothèque (FR)"><span class="link-arrow">&#10092;&#10092;</span><br/>The Library</a><!-- << symbol -->
-                <!-- <a href="softwares.html" class="index-nav-links grid-index-nav-links grid-bottom-link" title="To the softwares">Softwares<span class="link-arrow">&#9759;</span></a> -->
-                <a href="#rightpart-sn" class="index-nav-links grid-index-nav-links grid-right-link" title="To the social network board"><span class="link-arrow">&#10093;&#10093;</span><br/>Social network board</a><!-- >> symbol -->
+                <div id="mobile-nav" class="mobile-nav">
+                    <a href="javascript:void(0)" class="mobile-nav-closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html" title="🏠Home page" >🏠Home</a>
+                    <div class="grid-section"> 
+                        <h1 class="mobile-nav-grid-section-heading">About</h1>
+                        <div class="mobile-nav-grid-section">
+                            <a href="about.html#me" >About me</a>
+                            <a href="about.html#ttiki-hub" >About this website</a>
+                            <a href="formatting-rules.html" >Custom formatting code</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="grid-section">
+                        <h1 class="mobile-nav-grid-section-heading">Projects</h1>
+                        <div class="mobile-nav-grid-section">
+                            <a href="software.html" >🛠Software</a>
+                            <a href="games.html" >🎮Games</a>
+                            <a href="books.html" >📕Books</a>
+                            <a href="movies.html" >🎥Movies</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <a href="la-bibliotheque.html" class="fr-only " title="📚La bibliothèque">📚La bibliothèque</a>
+                    <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new"  title="🌐Social networks board">🌐The Social Networks board</a>
+                </div>
+                <div class="default-nav">
+                    <a href="index.html" title="🏠Home page" class="nav-link">🏠Home</a>
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="nav-link" onclick="redirectBtn('about.html')" data-dropdown-button>❓About</button>
+                        <div class="nav-dropdown-menu">
+                            <div class="info-grid-solo">
+                                <a href="about.html#me" class="nav-link">About me</a>
+                                <a href="about.html#ttiki-hub" class="nav-link">About this website</a>
+                                <a href="formatting-rules.html" class="nav-link">Custom formatting code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown" data-dropdown>
+                        <button class="nav-link" onclick="redirectBtn('projects.html')" data-dropdown-button>📋Projects</button>
+                        <div class="nav-dropdown-menu">
+                            <div class="info-grid-solo">
+                                <a href="software.html" class="nav-link">🛠Software</a>
+                                <a href="games.html" class="nav-link">🎮Games</a>
+                                <a href="books.html" class="nav-link">📕Books</a>
+                                <a href="movies.html" class="nav-link">🎥Movies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="la-bibliotheque.html" class="fr-only nav-link" title="📚La bibliothèque">📚La bibliothèque</a>
+                    <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new" class="nav-link" title="🌐Social networks board">🌐The Social Networks board</a>
+                </div>
             </nav>
-            <video playsinline autoplay muted loop id="bg-video" style="opacity: 1;" oncontextmenu="return false;">
-                <source  src="https://www.googleapis.com/drive/v3/files/1a9boVooq28dbfPx3rbKUMOD2MdNw7gN3?alt=media&key=AIzaSyCF3zlsKDZiLCIk8AYUufJdZuyAgvtG2nA"                       
-                type="video/webm">
-                <source  src="https://www.googleapis.com/drive/v3/files/1vDoYHAXwWWYkbNMJPWoFJ56xXef5k4zh?alt=media&key=AIzaSyCF3zlsKDZiLCIk8AYUufJdZuyAgvtG2nA"
-                type="video/mp4">
+        </header>
+        
+        <section>
+            <article>
+                <h1>Latest news</h1>
+                <p class="text-format">Welcome to this new page! I've reworked a lot of things, added new feature, 
+                    and had a lot more fun playing with javascript.<br/>
+                    You can find the same thing as the old page with more content such as code experimentation, etc.<br/>
+                </p>
+            </article>
 
-                Sorry, your browser doesn't support embedded videos!
-            </video>
-            <header>
-                <img src="resources/media/icon/icon.jpg" id="ttiki-logo" alt="Ttiki logo"/>   
-            </header>
-            <div class="title-difference">
-                <!-- <h1>Ttiki</h1> -->
-                <h2>I made games and softwares for fun.</h2>
-                <p>Website under construction</p>
+            <article>
+                <h1>About me & this page</h1>
+                             
+                <h2>About me</h2>
+                <p class="text-format">Hello, my name is Clément also known as 'Ttiki' on the internet.
+                    I was born on the 9th of March 2001 in Bayonne (French side of the Basque country).
+                    I've been making my first games and programs when I was 9 years old (§iapproximately§r).<br/>
+                    I've always been fascinated by sciences & most importantly computers. I've pursue science 
+                    studies in high-school, specializing in engineer sciences. I'm now in my third year in university
+                    specialized in computer science. <br/>
+                    Since 2020 (§i9th of March§r), I've launched my game studio. I've started working on my first
+                    game §gTwisted Minds§r. I've also started working with four of my friends on an alchool 
+                    mobile game §gOlives & Mines§r, as a joke and for fun.</p>
+                <h2>About this website</h2>
+                <p class="text-format">You will find here:</p>
+                <ul>
+                    <li>Codes experimentations</li>
+                    <li>Base information about me, my projects, etc.</li>
+                    <li>Quick links to my social networks, blogs, etc.</li>
+                    <li>Download to my application & software (withl ink to GitHub repo if available)</li>
+                    <li>A list of my games with links</li>
+                    <li>A list of books with links</li>
+                    <li>A list of movies with links</li>
+                    <li>A list of every games I've finished over the year over on my <a href="" title="Twitch channel" class="fr-only">Twitch channel</a></li>
+                </ul>
+                <a href="about.html" title="❓About" class="btn-link">Learn more...</a>
+            </article>
+        </section>
+        <footer>
+            <div class="licence">
+                <p>Flags icons by <a href="http://www.famfamfam.com/lab/icons/flags/" title="Flags icon licence">FamFamFam</a></a>.</p>
             </div>
-            
-        </div>      
-        <div id="rightpart-sn" class="right-part sn-wrap panel">
-            <a href="#centerpart-index" class="index-nav-links left-link" title="To home page" style="left: 0;"><span class="link-arrow">&#10092;&#10092;</span><br/>Home</a><!-- << symbol -->
-            <h1 style="text-align: center;">Social network board</h1>
-            <div id="sn-board-wrap">
-                <fieldset class="mixed-sn sn-panel">
-                    <legend class="board-title">FR/ENG</legend>
-                    <a href="https://www.jostatu.com/" alt="_blank" title="Jostatu" class="snboard-link link-panel"><img src="resources\media\img\sn\jostatu.png" alt="Jostatu" class="snboard-link-img" /></a>
-                    <a href="https://twitter.com/Kutsatuta" alt="_blank" title="Ttiki • Twitter" class="snboard-link link-panel"><img src="resources\media\img\sn\Twitter.png" alt="Ttiki • Twitter" class="snboard-link-img" /></a>
-                    <a href="https://steamcommunity.com/id/Ttiki" alt="_blank" title="Ttiki • Steam" class="snboard-link link-panel"><img src="resources\media\img\sn\steam.png" alt="Ttiki • Steam" class="snboard-link-img" /></a>
-                    <a href="https://www.youtube.com/channel/UCNOwwGU3kmy59lJRdij_cwQ" alt="_blank" title="Ttiki's maps • YouTube" class="snboard-link link-panel"><img src="resources\media\img\sn\ttiki-maps-yt.png" alt="Ttiki's maps • YouTube" class="snboard-link-img" /></a>  
-                </fieldset>
-                <fieldset class="eng-sn sn-panel">
-                    <legend class="board-title">ENG</legend>
-                    <a href="https://ttiki-blog.blogspot.com/" alt="_blank" title="Ttiki's Blog" class="snboard-link link-panel"><img src="resources\media\img\sn\ttiki-blog.png" alt="Ttiki's Blog" class="snboard-link-img" /></a>
-                    <a href="https://www.moddb.com/members/ttiki" alt="_blank" title="Ttiki • ModDB" class="snboard-link link-panel"><img src="resources\media\img\sn\moddb.png" alt="Ttiki • ModDB" class="snboard-link-img" /></a>
-                    <a href="https://www.reddit.com/user/Ttikii" alt="_blank" title="Ttiki • Reddit" class="snboard-link link-panel"><img src="resources\media\img\sn\Reddit.png" alt="Ttiki • Reddit" class="snboard-link-img" /></a>
-                </fieldset>
-                <fieldset class="fr-sn sn-panel">
-                    <legend class="board-title">FR</legend>
-                    <a href="https://www.youtube.com/channel/UCeIO_K2bJR7gakbmD8vsrgw" alt="_blank" title="Ttiki • Chaîne Youtube" class="snboard-link link-panel"><img src="resources\media\img\sn\ttiki-yt.png" alt="Ttiki • Chaîne Youtube" class="snboard-link-img" /></a>
-                    <a href="https://www.twitch.tv/ttiki" alt="_blank" title="Ttiki • Chaîne Twitch" class="snboard-link link-panel"><img src="resources\media\img\sn\twitch.png" alt="Ttiki • Chaîne Twitch" class="snboard-link-img" /></a>
-                </fieldset>
-            </div>
-            
-        </div> 
+        </footer>
     </body>
+    <!--Call to js-->
+    <script src="js/Utility/file_manager.js" defer></script>
+    <script src="js/Utility/string_manager.js" defer></script>
+    <script src="js/Utility/miscellaneous_utility.js" defer></script>
+    <script src="js/header_effects.js" defer async></script>
+    <script src="js/splash.js" async defer></script>
 </html>

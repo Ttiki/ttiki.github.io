@@ -1,0 +1,226 @@
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+header{
+    margin: 0 0 50px 0 ;
+    padding-top: 75px;
+    width: 100%;
+    background-image: url("../resources/media/img/backgrounds/headers/new_header.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment:scroll;
+    background-size: cover;
+}
+
+.index-header{
+    min-height: 517px;
+}
+
+.page-header{
+    min-height: 350px;
+}
+
+#header-banner-img{
+    z-index: -1;
+    width: 100%;
+    min-height: 517px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+#ttiki-logo-header-icon{
+    width:$ttiki-icon_wah;
+    height:$ttiki-icon_wah;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    transition: .2s;
+    &:hover{
+        
+        background-color:rgba(255,255,255,.5);
+        cursor: pointer; 
+        opacity: .7;
+    }
+}
+
+#titles-subtitles{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#main-title{
+    //font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: $default-spacing;
+	font-size: 64px;
+	transition: all 2s;
+	color: white;
+    mix-blend-mode: exclusion;
+    text-shadow: 2px 2px 0px $highlight-dark-grey;
+}
+
+#main-title:hover{
+    letter-spacing: $hover-spacing;
+}
+
+nav{
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid $default_border-color;
+    border-bottom: 1px solid $default_border-color;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 75%);
+
+    .default-nav{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    .nav-link{
+        padding: 1em;
+        margin: 0;
+        background-color: white;
+        font-family: inherit;
+        font-size: inherit;
+        border: 0;
+        border-right: 1px solid $default_border-color;
+        color: $highlight-dark-grey;
+        text-decoration: none;
+        font-weight: bold;
+        transition: .2s;
+        &:hover{
+            background-color: $highlight_bg-color;
+            cursor: pointer;
+        }
+    }
+
+    .nav-dropdown{
+        position: relative;
+        display:inline-block;
+    }
+
+    .nav-dropdown-menu{
+        /*Position*/
+        position: absolute;
+        left: 0;
+        top: calc(100%);
+
+        background-color: $highlight-dark-grey;
+        color: $highlight_bg-color;
+        padding: .75rem;
+        border: 1px solid $default_border-color;
+        border-radius:$default_border-radius;
+        border-top-left-radius: 0;
+        box-shadow: 0 2px 5px 0, rgba(0,0,0,.25);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: .2s;
+    }
+
+    .info-grid-solo{
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 2rem;
+        .nav-link{
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+            padding: .25em;
+            background-color: rgba(0,0,0,0);
+            color: $highlight_bg-color;
+            border: 0;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .nav-dropdown.active, .nav-dropdown:hover > .nav-link + .nav-dropdown-menu{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .mobile-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $highlight-dark-grey;
+        color: $highlight_bg-color;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 5em; 
+
+        .mobile-nav-closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            
+        }
+        a{
+            text-decoration: none;
+            font-size: 22px;
+            color: $highlight_bg-color;
+            display: block;
+            transition: 0.3s;
+            padding: .1em .5em;
+        }
+
+        .mobile-nav-grid-section{
+            display:grid;
+            //grid-template-columns: repeat(2);
+            gap: .5rem;
+        }
+        .mobile-nav-grid-section-heading{
+            padding-left: .5em;
+            font-size: 32px;
+        }
+
+        hr{
+            width: 80%;
+            margin: auto;
+            border: none;
+            border-top: 1px solid rgba(0,0,0,.25);
+            margin: .7em 0;
+        }
+    }
+}
+
+.mobile-burger-button{
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size:30px;
+    cursor:pointer;
+    mix-blend-mode: darken;
+}
+
+#splash-subtitles{
+    color: white;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+/* --------------------------------- § Color -------------------------------- */
+@each $key, $val in $colors{
+    .#{$key}{
+        color: $val;
+    }
+}   

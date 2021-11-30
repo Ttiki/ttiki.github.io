@@ -1,0 +1,16 @@
+{
+    "defaultPath":"resources/media/img/icons/ttiki/",
+    "icons":[
+        {"name" :"gasmask_icon.png", "alt" : "Lord Akats_ gas mask's"},
+        {"name" :"ttiki-bronze.png", "alt" : "Bronze Ttiki badge"},
+        {"name" :"ttiki-gold.png", "alt" : "Gold Ttiki badge"},
+        {"name" :"ttiki-logo-maps.png", "alt" : "Ttiki's maps logo"},
+        {"name" :"ttiki-logo-softwares.png", "alt" : "Ttiki's software logo"},
+        {"name" :"ttiki-logo-wshadow.png", "alt" : "Ttiki's logo"},
+        {"name" :"ttiki-logo-wshadow-whitering.png", "alt" : "Ttiki's logo"},
+        {"name" :"ttiki-silver.png", "alt": "Silver Ttiki badge"},
+        {"name" : "jostatu-logo-nobackground-all.gif", "alt" : "Jostatu logo"},
+        {"name" : "lord.png", "alt" : "Lord Ttiki"},
+        {"name" : "bogosse.jpeg", "alt" : "Bogoss"}
+    ]
+}

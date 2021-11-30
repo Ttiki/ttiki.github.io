@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <!-- Metas tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="Ttiki's HUB">
+        <meta name="description" content="Ttiki's HUB, a place to connect, discover and download my apps!">
+        <meta name="keywords" content="Ttiki, hub, personal, page, GitHub, hub, social, network, list, software, application, games, database, download, free, game, development, code, development">
+        <meta name="language" content="English">
+        <meta name="author" content="Clément 'Ttiki' Combier clem64.combier@gmail.com">
+        <meta name="robots" content="index, follow">
+
+        <!-- Links tags -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/library.css">
+        <link rel="icon" href="resources/media/icon/ttiki-logo.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Others tags -->
+        <title>Ttiki's HUB - La Bibliothèque</title>
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    </head>
+    <body id="parallax-body">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav>
+            <div id="mobile-nav" class="mobile-nav">
+                <a href="javascript:void(0)" class="mobile-nav-closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" title="🏠Home page" >🏠Home</a>
+                <div class="grid-section"> 
+                    <h1 class="mobile-nav-grid-section-heading">About</h1>
+                    <div class="mobile-nav-grid-section">
+                        <a href="about.html#me" >About me</a>
+                        <a href="about.html#ttiki-hub" >About this website</a>
+                        <a href="formatting-rules.html" >Custom formatting code</a>
+                    </div>
+                </div>
+                <hr/>
+                <div class="grid-section">
+                    <h1 class="mobile-nav-grid-section-heading">Projects</h1>
+                    <div class="mobile-nav-grid-section">
+                        <a href="software.html" >🛠Software</a>
+                        <a href="games.html" >🎮Games</a>
+                        <a href="books.html" >📕Books</a>
+                        <a href="movies.html" >🎥Movies</a>
+                    </div>
+                </div>
+                <hr/>
+                <a href="la-bibliotheque.html" class="fr-only " title="📚La bibliothèque">📚La bibliothèque</a>
+                <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new"  title="🌐Social networks board">🌐The Social Networks board</a>
+            </div>
+            <div class="default-nav">
+                <a href="index.html" title="🏠Home page" class="nav-link">🏠Home</a>
+                <div class="nav-dropdown" data-dropdown>
+                    <button class="nav-link" onclick="redirectBtn('about.html')" data-dropdown-button>❓About</button>
+                    <div class="nav-dropdown-menu">
+                        <div class="info-grid-solo">
+                            <a href="about.html#me" class="nav-link">About me</a>
+                            <a href="about.html#ttiki-hub" class="nav-link">About this website</a>
+                            <a href="formatting-rules.html" class="nav-link">Custom formatting code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-dropdown" data-dropdown>
+                    <button class="nav-link" onclick="redirectBtn('projects.html')" data-dropdown-button>📋Projects</button>
+                    <div class="nav-dropdown-menu">
+                        <div class="info-grid-solo">
+                            <a href="software.html" class="nav-link">🛠Software</a>
+                            <a href="games.html" class="nav-link">🎮Games</a>
+                            <a href="books.html" class="nav-link">📕Books</a>
+                            <a href="movies.html" class="nav-link">🎥Movies</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="la-bibliotheque.html" class="fr-only nav-link" title="📚La bibliothèque">📚La bibliothèque</a>
+                <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new" class="nav-link" title="🌐Social networks board">🌐The Social Networks board</a>
+            </div>
+        </nav>
+        <div id="bg-body">
+            <div class="search-bar-header">
+                <h1 id="library-title">La Bibliothèque</h1>
+                <p class="bg-img-licence">Background-image by <a href="https://picsum.photos/" title="Lorem Picsum">Lorem Picsum</a></p><br/>
+                <input type="text" name="search" onkeyup="searchTable()" placeholder="Chercher un jeu" id="game-collection_search-bar" class="collection_search-bar">
+                <!-- <input type="submit" hidden name="search-submit" id="game-collection_search-submit"> -->
+            </div>
+            <section id="main-library">
+                
+            </section>
+        </div>
+        
+    </body>
+    <!--Call to js-->
+    <script src="js/Utility/file_manager.js" defer></script>
+    <script src="js/Utility/string_manager.js" defer></script>
+    <script src="js/header_effects.js" defer async></script>
+    <script src="js/splash.js" async defer></script>
+
+    <!-- Firebase scripts -->
+    <script src="js/FireBase/firebase_init.js"></script>
+    <script src="js/FireBase/library.js"></script>
+</html>

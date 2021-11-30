@@ -1,0 +1,51 @@
+@import '_global';
+
+@media only screen and (max-width: 800px){
+    p{
+        font-size: 14px;
+        &::first-letter{
+            font-size: 18px;
+        }
+    }
+    article{
+        h1{
+            font-size: 24px;
+        }
+        h2{
+            font-size: 22px;;
+        }
+    }
+    nav{
+        .nav-link{
+            font-size: 14px;
+            padding: .7em;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    article{
+        width: 100%;
+    }
+    nav{
+        .nav-link{
+            font-size: 14px;
+            padding: .5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 625px){
+    header{
+        border-bottom: 1px solid $default_border-color;
+    }
+    .mobile-burger-button{
+        display: block;
+    }
+    nav{
+        .default-nav{
+            display: none;
+        }
+    }
+    
+}

@@ -1,53 +1,50 @@
-//////////////////////////////////////////////////////////////
-///                        COLORS                          ///
-//////////////////////////////////////////////////////////////
-$index-navlink-bgcolor: #27272770;
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
 
+$highlight_bg-color: #eee;
+$default_border-color: #bbb;
+$highlight-dark-grey: #333;
+$bg-color: rgb(255, 255, 255);
 $game-collection-search-bar_border-color: #00aeff86;
 
-$link-panel_shadow-color: #ffffff;
+$link-panel_shadow-color: #00aeff86;
 
-$inset-style-button_color: white;
-$inset-style-button_border-color: black; 
-$inset-style-button_shadow-color: #00000070;
-$inset-style-button_shadow-color_HOVER: #fff; 
-$inset-style-button_color_ACTIVE: rgba(201, 201, 201, 0.75);
-$inset-style-button_shadow-color_ACTIVE: rgba(100, 100, 100, .75);
+$table-th_bg-color: #24292f;
 
-$nav-link_color: rgb(225, 225, 225);
+//$game-collection-search-bar_border-color: #00aeff86;
 
-$nav_bgcolor: rgb(64, 64, 64);
+/* ------------------------- Minecraft color palete ------------------------- */
+$colors: (
+    c-1: #BE0000,
+    c-2: #FE3F3F,
+    c-3: #D9A334,
+    c-4: #FEFE3F,
+    c-5: #00BE00,
+    c-6: #3FFE3F,
+    c-7: #00BEBE,
+    c-8: #0000BE,
+    c-9: #3F3FFE,
+    c-a: #FE3FFE,
+    c-b: #BE00BE,
+    c-c: #FFFFFF,
+    c-d: #BEBEBE,
+    c-e: #3F3F3F,
+    c-f: #000000,
+);
+/* -------------------------------------------------------------------------- */
 
-$nav-link-home_color: #fff;
-$nav-link-astro_color: rgb(241, 213, 120);
-$nav-link-chimie_color: #e09900;
-$nav-link-bio_color: #179412;
-$nav-link-cs_color: #9302a7;
-$nav-link-medecine_color: #ff0077;
-$nav-link-math_color: #005acf;
-
-$game-collection-search-bar_border-color: #00aeff86;
-
-$upload-button_bgcolor: rgb(22, 192, 0);
 
 
-$aside-nav-dropdown_color: #303030;
-$aside-nav-dropdown_color_HOVER: #e4e4e4;
-$aside-nav-border-bottom_bgcolor: #ffffff;
-$aside-nav-border-bottom_bgcolor_DARK: #f3f3f3;
-$aside-nav-border-bottom_color: #979797;
-$aside-nav-border-bottom_color_LIGHT: #b8b8b8;
 
-//////////////////////////////////////////////////////////////
-///                         SIZES                          ///
-//////////////////////////////////////////////////////////////
 
-//index-nav-links
-$index-nav-links_width: 75px;
-$index-nav-links-bottom_width: 100vw;
-$index-nav-links_fontSize: 18px;
+/* -------------------------------------------------------------------------- */
+/*                            Width, height & sizes                           */
+/* -------------------------------------------------------------------------- */
 
-//game-collection-search-bar
+$clear-sizes: 16px, 32px, 64px, 96px, 128px, 256px 512px;
+$ttiki-icon_wah: 128px;
+
 $game-collection-search-bar_radius: 4px; 
 $game-collection-search-bar_font-size: 28px;
 $game-collection-search-bar_padding: 12px 24px;
@@ -55,33 +52,27 @@ $game-collection-search-bar_border-size: 1px;
 $game-collection-search-bar_shadow-spread: 4px;
 $game-collection-search-bar_shadow-blur: 4px;
 
-//link-panel
-$link-panel_shadow-size: 7px;
+$licence-font-size: 12px;
+
+/* ------------------------ Big Ttitle letter spacing ----------------------- */
+$default-spacing:0.1em;
+$hover-spacing:0.25em;
+
+
+/* ------------------------------ link-panel ------------------------------ */
+$link-panel_shadow-size: 3px;
 $panel-link_wdith: 300px;
 $panel-link_height: 150px;
 $panel-link_wdith-hover: 350px;
 $panel-link_height-hover: 200px;
-
-//inset-style-button_margin
-$inset-style-button_margin: 16px;
-$inset-style-button_padding: 8px;
-$inset-style-button_font-size: 24px;
-$inset-style-button_raidus: 8px;
-$inset-style-button_border-size: 1px;
-$inset-style-button_shadow-size: 5px;
-$inset-style-button_shadow-blurspread: 1px;
+/* -------------------------------------------------------------------------- */
 
 
-//////////////////////////////////////////////////////////////
-///                   ICON & MAIN LOGO                     ///
-//////////////////////////////////////////////////////////////
-$logo-size: 150px;
-$logo-borderRadius: 50%;
 
-//////////////////////////////////////////////////////////////
-///                     MISCELLANEOUS                      ///
-//////////////////////////////////////////////////////////////
-$_global_font: 'Roboto', 'Open Sans Condensed', sans-serif;
+/* -------------------------------------------------------------------------- */
+/*                                MISCELLANEOUS                               */
+/* -------------------------------------------------------------------------- */
 $link-panel_transition-time: .3s;
 $link-panel_resize: 1.25;
+$default_border-radius: 7px;
 $nb-item-game-grid: 5;
