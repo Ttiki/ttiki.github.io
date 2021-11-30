@@ -1,0 +1,25 @@
+{
+    "rules":[
+        {"placeholder" : "§1", "code" : "<span class=c-1>", "description" : "Change the text color to dark red #BE0000"},
+        {"placeholder" : "§2", "code" : "<span class=c-2>", "description" : "Change the text color to red #FE3F3F"},
+        {"placeholder" : "§3", "code" : "<span class=c-3>", "description" : "Change the text color to orange #D9A334"},
+        {"placeholder" : "§4", "code" : "<span class=c-4>", "description" : "Change the text color to yellow #FEFE3F"},
+        {"placeholder" : "§5", "code" : "<span class=c-5>", "description" : "Change the text color to dark green #00BE00"},
+        {"placeholder" : "§6", "code" : "<span class=c-6>", "description" : "Change the text color to lime green #3FFE3F"},
+        {"placeholder" : "§7", "code" : "<span class=c-7>", "description" : "Change the text color to light blue #00BEBE"},
+        {"placeholder" : "§8", "code" : "<span class=c-8>", "description" : "Change the text color to dark blue #0000BE"},
+        {"placeholder" : "§9", "code" : "<span class=c-9>", "description" : "Change the text color to cyan #3F3FFE"},
+        {"placeholder" : "§a", "code" : "<span class=c-a>", "description" : "Change the text color to pink #FE3FFE"},
+        {"placeholder" : "§b", "code" : "<span class=c-b>", "description" : "Change the text color to purple #BE00BE"},
+        {"placeholder" : "§c", "code" : "<span class=c-c>", "description" : "Change the text color to white #FFFFFF"},
+        {"placeholder" : "§d", "code" : "<span class=c-d>", "description" : "Change the text color to light grey #BEBEBE"},
+        {"placeholder" : "§e", "code" : "<span class=c-e>", "description" : "Change the text color to dark grey #3F3F3F"},
+        {"placeholder" : "§f", "code" : "<span class=c-f>", "description" : "Change the text color to black #000000"},
+        {"placeholder" : "§g", "code" : "<span class=c-g>", "description" : "Apply a bold style to the text"},
+        {"placeholder" : "§i", "code" : "<span class=c-i>", "description" : "Apply an italic style to the text"},
+        {"placeholder" : "§m", "code" : "<span class=c-m>", "description" : "Minecraftify the text (as seen on Minecraft's splash screen"},
+        {"placeholder" : "§k", "code" : "<span class=c-k>", "description" : "Randomize the text every few milliseconds"},
+        {"placeholder" : "§r", "code" : "<span class=c-r>", "description" : "Reset the old format"},
+        {"placeholder" : "§n", "code" : "<span class=c-n>", "description" : "Show the date"}
+    ]
+}

@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+    min-height: 10vh;
+    margin: 25px auto;
+    position: relative;
+    bottom:0;
+    left:0;
+    right:0;
+
+    background-color: $highlight-dark-grey;
+    color: $highlight_bg-color;
+
+    border-top:1px solid $default_border-color;
+
+    a{
+        color: $highlight_bg-color;
+    }
+}
+
+.licence{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    p{
+        text-align: center;
+        font-size: $licence-font-size;
+        &::first-letter{
+            font-size: $licence-font-size;
+        }
+    }
+}
