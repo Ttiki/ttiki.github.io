@@ -1,11 +1,13 @@
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
+
+
 header{
     margin: 0 0 50px 0 ;
     padding-top: 75px;
     width: 100%;
-    background-image: url("../resources/media/img/backgrounds/headers/new_header.jpg");
+    background-image: var(--header-img);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment:scroll;
@@ -78,7 +80,7 @@ nav{
     border-top: 1px solid $default_border-color;
     border-bottom: 1px solid $default_border-color;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 75%);
+    background: var(--nav-bg);
 
     .default-nav{
         margin: 0;
@@ -89,17 +91,17 @@ nav{
     .nav-link{
         padding: 1em;
         margin: 0;
-        background-color: white;
+        background-color: var(--nav-bg);
         font-family: inherit;
         font-size: inherit;
         border: 0;
         border-right: 1px solid $default_border-color;
-        color: $highlight-dark-grey;
+        color: var(--nav-color);
         text-decoration: none;
         font-weight: bold;
         transition: .2s;
         &:hover{
-            background-color: $highlight_bg-color;
+            background-color: var(--nav-bg);
             cursor: pointer;
         }
     }
