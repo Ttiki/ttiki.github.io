@@ -7,7 +7,6 @@ header{
     margin: 0 0 50px 0 ;
     padding-top: 75px;
     width: 100%;
-    background-image: var(--header-img);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment:scroll;
@@ -59,7 +58,6 @@ header{
     letter-spacing: $default-spacing;
 	font-size: 64px;
 	transition: all 2s;
-	color: white;
     mix-blend-mode: exclusion;
     text-shadow: 2px 2px 0px $highlight-dark-grey;
 }
@@ -76,11 +74,7 @@ nav{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: white;
-    border-top: 1px solid $default_border-color;
-    border-bottom: 1px solid $default_border-color;
-    background: rgb(255,255,255);
-    background: var(--nav-bg);
+    
 
     .default-nav{
         margin: 0;
@@ -91,17 +85,15 @@ nav{
     .nav-link{
         padding: 1em;
         margin: 0;
-        background-color: var(--nav-bg);
+        
         font-family: inherit;
         font-size: inherit;
         border: 0;
-        border-right: 1px solid $default_border-color;
-        color: var(--nav-color);
+        
         text-decoration: none;
         font-weight: bold;
         transition: .2s;
         &:hover{
-            background-color: var(--nav-bg);
             cursor: pointer;
         }
     }
@@ -116,14 +108,9 @@ nav{
         position: absolute;
         left: 0;
         top: calc(100%);
-
-        background-color: $highlight-dark-grey;
-        color: $highlight_bg-color;
         padding: .75rem;
-        border: 1px solid $default_border-color;
         border-radius:$default_border-radius;
         border-top-left-radius: 0;
-        box-shadow: 0 2px 5px 0, rgba(0,0,0,.25);
         opacity: 0;
         pointer-events: none;
         transform: translateY(-10px);
@@ -139,8 +126,6 @@ nav{
             flex-direction: column;
             gap: .25rem;
             padding: .25em;
-            background-color: rgba(0,0,0,0);
-            color: $highlight_bg-color;
             border: 0;
             &:hover{
                 text-decoration: underline;

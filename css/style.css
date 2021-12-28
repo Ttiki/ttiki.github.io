@@ -5,6 +5,10 @@
 /* ------------------------- Minecraft color palete ------------------------- */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
+/*                          Night mode color version                          */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 /*                            Width, height & sizes                           */
 /* -------------------------------------------------------------------------- */
 /* ------------------------ Big Ttitle letter spacing ----------------------- */
@@ -17,6 +21,10 @@
 /*                                   COLORS                                   */
 /* -------------------------------------------------------------------------- */
 /* ------------------------- Minecraft color palete ------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                          Night mode color version                          */
+/* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                            Width, height & sizes                           */
@@ -78,6 +86,171 @@ header {
   -o-animation: .5s minecraftTextPulsating infinite alternate;
 }
 
+img::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  background-image: url("../resources/media/img/nomediaavailable.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.fr-only::before {
+  content: "";
+  display: inline-block;
+  background: url("../resources/media/img/icons/flags/fr.gif") no-repeat bottom;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+}
+
+.eng-only::before {
+  content: "";
+  content: "";
+  display: inline-block;
+  background: url("../resources/media/img/icons/flags/gb.gif") no-repeat bottom;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+}
+
+.mixed-fr_gb::before {
+  content: "";
+  display: inline-block;
+  background: url("../resources/media/img/icons/flags/mixed-fr_gb.gif") no-repeat bottom;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+}
+
+.icon-home::before {
+  content: "🏠";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-wrench::before {
+  content: "🛠";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-games::before {
+  content: "🎮";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-book::before {
+  content: "📕";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-movies::before {
+  content: "🎥";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-books::before {
+  content: "📚";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-warning::before {
+  content: "⚠️";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-nuclear::before {
+  content: "☢️";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-biological::before {
+  content: "☣️";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-forbiden::before {
+  content: "🚫";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-forbiden2::before {
+  content: "⛔";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-question::before {
+  content: "❓";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-internet::before {
+  content: "🌐";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-clipboard::before {
+  content: "📋";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
@@ -85,7 +258,6 @@ header {
   margin: 0 0 50px 0;
   padding-top: 75px;
   width: 100%;
-  background-image: var(--header-img);
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: scroll;
@@ -138,7 +310,6 @@ header {
   font-size: 64px;
   -webkit-transition: all 2s;
   transition: all 2s;
-  color: white;
   mix-blend-mode: exclusion;
   text-shadow: 2px 2px 0px #333;
 }
@@ -155,11 +326,6 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  background: white;
-  background: var(--nav-bg);
 }
 
 nav .default-nav {
@@ -173,12 +339,9 @@ nav .default-nav {
 nav .nav-link {
   padding: 1em;
   margin: 0;
-  background-color: var(--nav-bg);
   font-family: inherit;
   font-size: inherit;
   border: 0;
-  border-right: 1px solid #bbb;
-  color: var(--nav-color);
   text-decoration: none;
   font-weight: bold;
   -webkit-transition: .2s;
@@ -186,7 +349,6 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-  background-color: var(--nav-bg);
   cursor: pointer;
 }
 
@@ -200,14 +362,9 @@ nav .nav-dropdown-menu {
   position: absolute;
   left: 0;
   top: calc(100%);
-  background-color: #333;
-  color: #eee;
   padding: .75rem;
-  border: 1px solid #bbb;
   border-radius: 7px;
   border-top-left-radius: 0;
-  -webkit-box-shadow: 0 2px 5px 0, rgba(0, 0, 0, 0.25);
-          box-shadow: 0 2px 5px 0, rgba(0, 0, 0, 0.25);
   opacity: 0;
   pointer-events: none;
   -webkit-transform: translateY(-10px);
@@ -235,8 +392,6 @@ nav .info-grid-solo .nav-link {
           flex-direction: column;
   gap: .25rem;
   padding: .25em;
-  background-color: rgba(0, 0, 0, 0);
-  color: #eee;
   border: 0;
 }
 
@@ -417,17 +572,6 @@ footer a {
 /* -------------------------------------------------------------------------- */
 /*                                   GENERAL                                  */
 /* -------------------------------------------------------------------------- */
-:root {
-  --bg-color: $bg-color;
-  --header-img: url("../resources/media/img/backgrounds/headers/new_header.jpg");
-  --text-color: black;
-  --article-header: $highlight_bg-color;
-  --link-color: #333;
-  --nav-color: $highlight-dark-grey;
-  --nav-bg: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 75%);
-  --nav-btn-bg-color: white;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -441,9 +585,6 @@ body {
   width: 100%;
   z-index: 0;
   margin: 0;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
 .parallax__layer {
@@ -464,24 +605,9 @@ p::first-letter {
   font-size: 20px;
 }
 
-img:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  width: 90%;
-  height: 80%;
-  background-image: url("../resources/media/img/nomediaavailable.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
 kbd {
-  background-color: #eee;
   border-radius: 3px;
   border: 1px solid #bbb;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  color: #333;
   display: inline-block;
   font-size: .85em;
   font-weight: 700;
@@ -499,8 +625,7 @@ section {
 article {
   width: 90%;
   margin: 25px auto;
-  border: 1px solid #bbb;
-  border-radius: var(--article-header);
+  border-radius: 7px;
   padding: .5em .7em;
   overflow: hidden;
 }
@@ -508,13 +633,10 @@ article {
 article h1 {
   margin: -.25em -.6em 1em -.6em;
   padding: .5em;
-  border-bottom: 1px solid #bbb;
-  background-color: var(--article-header);
   font-size: 26px;
 }
 
 article h2 {
-  border-bottom: 1px solid #bbb;
   font-size: 24px;
 }
 
@@ -562,33 +684,6 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 7px;
 }
 
-.fr-only:before {
-  content: "";
-  display: inline-block;
-  background: url("../resources/media/img/icons/flags/fr.gif") no-repeat bottom;
-  width: 25px;
-  height: 20px;
-  margin: 0;
-}
-
-.eng-only:before {
-  content: "";
-  display: inline-block;
-  background: url("../resources/media/img/icons/flags/gb.gif") no-repeat bottom;
-  width: 25px;
-  height: 20px;
-  margin: 0;
-}
-
-.mixed-fr_gb:before {
-  content: "";
-  display: inline-block;
-  background: url("../resources/media/img/icons/flags/mixed-fr_gb.gif") no-repeat bottom;
-  width: 25px;
-  height: 20px;
-  margin: 0;
-}
-
 .btn-link {
   float: right;
   margin: -10px 5px 5px 0;
@@ -597,16 +692,10 @@ table tr:last-child td:last-child {
   font-weight: 500;
   line-height: 20px;
   text-decoration: none;
-  color: var(--link-color);
   cursor: pointer;
-  border: 1px solid #bbb;
   border-radius: 7px;
   -webkit-transition: .2s;
   transition: .2s;
-}
-
-.btn-link:hover {
-  background-color: #eee;
 }
 
 /* ---------------------------------- Input --------------------------------- */
@@ -615,7 +704,6 @@ table tr:last-child td:last-child {
   font-size: 28px;
   padding: 12px 24px;
   width: 25%;
-  border: 1px solid darkgrey;
 }
 
 .collection_search-bar:focus, .collection_search-bar-softwares:focus {

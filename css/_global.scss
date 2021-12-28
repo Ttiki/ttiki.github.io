@@ -12,6 +12,12 @@ $link-panel_shadow-color: #00aeff86;
 
 $table-th_bg-color: #24292f;
 
+$btn-link_bg-color-green: green;
+$btn-link_border-color-green: darkgreen;
+$btn-link_bg-color-blue: blue;
+$btn-link_border-color-blue: darkblue;
+
+
 //$game-collection-search-bar_border-color: #00aeff86;
 
 /* ------------------------- Minecraft color palete ------------------------- */
@@ -34,6 +40,14 @@ $colors: (
 );
 /* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                          Night mode color version                          */
+/* -------------------------------------------------------------------------- */
+$bg-color_night: rgb(25,25,25);
+$default_border-color_night: #444;
+$highlight_bg-color_night: rgb(35,35,35);
+
+/* -------------------------------------------------------------------------- */
 
 
 
@@ -76,3 +90,20 @@ $link-panel_transition-time: .3s;
 $link-panel_resize: 1.25;
 $default_border-radius: 7px;
 $nb-item-game-grid: 5;
+
+$symbols: (
+    home : "🏠",
+    wrench : "🛠",
+    games : "🎮",
+    book : "📕",
+    movies : "🎥",
+    books : "📚",
+    warning : "⚠️",
+    nuclear : "☢️",
+    biological : "☣️",
+    forbiden : "🚫",
+    forbiden2 : "⛔",
+    question : "❓",
+    internet : "🌐",
+    clipboard : "📋"
+);
