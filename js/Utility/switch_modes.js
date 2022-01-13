@@ -31,7 +31,7 @@ switch (now.getMonth()) {
 console.log("Sunset time is: " + sunSetTime.getHours() + " and sunrine is: " + sunRiseTime.getHours());
 
 //We check if the actual date is lower to the sunset hour
-if(now.getHours()>sunSetTime.getHours() || now.getHours() < sunRiseTime.getHours()){
+if (now.getHours() > sunSetTime.getHours() || now.getHours() < sunRiseTime.getHours()) {
     console.log("Switching to night mode!");
     //Set style properties for each day element
     document.documentElement.style.setProperty("--bg-color", "#141414");
@@ -45,5 +45,5 @@ if(now.getHours()>sunSetTime.getHours() || now.getHours() < sunRiseTime.getHours
     document.documentElement.style.setProperty("--nav-bg", "linear-gradient(180deg, rgba(75,75,75,1) 0%, rgba(50,50,50,1) 75%");
 
 
-   
+
 }
