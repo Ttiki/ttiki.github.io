@@ -1,6 +1,6 @@
 //Includes
 $(document).ready(function() {
-    $("#parallax-header").load("../../resources/includes/header.html")
+    $("#parallax-header").load("includes/header.html")
 })
 
 function redirectBtn(redirectUrl) {
