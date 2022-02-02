@@ -64,16 +64,6 @@ table tr th {
   border-top: 1px solid #444;
 }
 
-.btn-link {
-  color: #ddd;
-  background-color: green;
-  border: 1px solid darkgreen;
-}
-
-.btn-link:hover {
-  background-color: #232323;
-}
-
 .collection_search-bar {
   border: 1px solid darkgrey;
 }
@@ -114,5 +104,19 @@ nav .nav-dropdown-menu {
 nav .info-grid-solo .nav-link {
   background-color: rgba(0, 0, 0, 0);
   color: #eee;
+}
+
+a:not(.link-panel,
+.nav-link,
+.btn-link) {
+  color: orange;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:not(.link-panel,
+.nav-link,
+.btn-link):hover::after {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=dark.css.map */

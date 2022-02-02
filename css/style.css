@@ -303,6 +303,7 @@ header {
   width: 100%;
   margin: auto;
   text-align: center;
+  text-shadow: 0 0 10px black;
 }
 
 #main-title {
@@ -477,67 +478,6 @@ nav .mobile-nav hr {
   margin-bottom: 50px;
 }
 
-/* --------------------------------- § Color -------------------------------- */
-.c-1 {
-  color: #BE0000;
-}
-
-.c-2 {
-  color: #FE3F3F;
-}
-
-.c-3 {
-  color: #D9A334;
-}
-
-.c-4 {
-  color: #FEFE3F;
-}
-
-.c-5 {
-  color: #00BE00;
-}
-
-.c-6 {
-  color: #3FFE3F;
-}
-
-.c-7 {
-  color: #00BEBE;
-}
-
-.c-8 {
-  color: #0000BE;
-}
-
-.c-9 {
-  color: #3F3FFE;
-}
-
-.c-a {
-  color: #FE3FFE;
-}
-
-.c-b {
-  color: #BE00BE;
-}
-
-.c-c {
-  color: #FFFFFF;
-}
-
-.c-d {
-  color: #BEBEBE;
-}
-
-.c-e {
-  color: #3F3F3F;
-}
-
-.c-f {
-  color: #000000;
-}
-
 footer {
   width: 100%;
   min-height: 10vh;
@@ -642,6 +582,10 @@ article h2 {
   font-size: 24px;
 }
 
+article .btn-link {
+  float: right;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -687,7 +631,6 @@ table tr:last-child td:last-child {
 }
 
 .btn-link {
-  float: right;
   margin: -10px 5px 5px 0;
   padding: 7px 16px;
   font-size: 14px;
@@ -696,8 +639,43 @@ table tr:last-child td:last-child {
   text-decoration: none;
   cursor: pointer;
   border-radius: 7px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  border: 2px solid;
+}
+
+.btn-link.--green {
+  background-color: #008000;
+  border-color: #004d00;
+  color: white !important;
+}
+
+.btn-link.--red {
+  background-color: #c80000;
+  border-color: #950000;
+  color: white !important;
+}
+
+.btn-link.--purple {
+  background-color: #9600ff;
+  border-color: #7800cc;
+  color: white !important;
+}
+
+.btn-link.--yellow {
+  background-color: #ffff00;
+  border-color: #cccc00;
+  color: white !important;
+}
+
+.btn-link.--orange {
+  background-color: #ffc800;
+  border-color: #cca000;
+  color: white !important;
+}
+
+.btn-link.--white {
+  background-color: white;
+  border-color: #e6e6e6;
+  color: black !important;
 }
 
 /* ---------------------------------- Input --------------------------------- */
@@ -773,7 +751,7 @@ table tr:last-child td:last-child {
 }
 
 .c-m {
-  font-family: "System Gras","Courier Normal", "Fixedsys Normal", Consolas;
+  font-family: "System Gras", "Courier Normal", "Fixedsys Normal", Consolas;
   color: #FEFE3F;
   animation: minecraftTextPulsating, .5s, infinite;
   -webkit-animation: minecraftTextPulsating, .5s, infinite;
@@ -794,5 +772,66 @@ table tr:last-child td:last-child {
 
 #formatting-rules-table td:nth-child(2) {
   text-align: center;
+}
+
+/* --------------------------------- § Color -------------------------------- */
+.c-1 {
+  color: #BE0000;
+}
+
+.c-2 {
+  color: #FE3F3F;
+}
+
+.c-3 {
+  color: #D9A334;
+}
+
+.c-4 {
+  color: #FEFE3F;
+}
+
+.c-5 {
+  color: #00BE00;
+}
+
+.c-6 {
+  color: #3FFE3F;
+}
+
+.c-7 {
+  color: #00BEBE;
+}
+
+.c-8 {
+  color: #0000BE;
+}
+
+.c-9 {
+  color: #3F3FFE;
+}
+
+.c-a {
+  color: #FE3FFE;
+}
+
+.c-b {
+  color: #BE00BE;
+}
+
+.c-c {
+  color: #FFFFFF;
+}
+
+.c-d {
+  color: #BEBEBE;
+}
+
+.c-e {
+  color: #3F3F3F;
+}
+
+.c-f {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

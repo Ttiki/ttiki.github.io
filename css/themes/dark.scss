@@ -1,5 +1,5 @@
 @import "../global";
-:root {
+ :root {
     --header-img: url('../../resources/media/img/backgrounds/headers/new_header_night.jpg');
     --nav-bg: linear-gradient(180deg, rgb(0, 0, 0), rgb(35, 35, 35) 75%);
     --nav-btn-bg-color: black;
@@ -42,17 +42,6 @@ table {
         background: $highlight_bg-color_night;
         border-top: 1px solid $default_border-color_night;
     }
-}
-
-.btn-link {
-    color: #ddd;
-    background-color: $btn-link_bg-color-green;
-    border: 1px solid $btn-link_border-color-green;
-    &:hover {
-        background-color: $highlight_bg-color_night;
-    }
-    .btn-blue {}
-    .btn-green {}
 }
 
 .collection_search-bar {
@@ -99,4 +88,18 @@ nav {
             color: $highlight_bg-color;
         }
     }
+}
+
+a:not(.link-panel,
+.nav-link,
+.btn-link) {
+    color: orange;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:not(.link-panel,
+.nav-link,
+.btn-link):hover::after {
+    text-decoration: underline;
 }

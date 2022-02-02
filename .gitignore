@@ -7,6 +7,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+*.map
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and

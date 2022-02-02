@@ -53,6 +53,7 @@ header {
     width: 100%;
     margin: auto;
     text-align: center;
+    text-shadow: 0 0 10px black;
 }
 
 #main-title {
@@ -194,14 +195,4 @@ nav {
     color: white;
     margin-top: -25px;
     margin-bottom: 50px;
-}
-
-
-/* --------------------------------- § Color -------------------------------- */
-
-@each $key,
-$val in $colors {
-    .#{$key} {
-        color: $val;
-    }
 }

@@ -18,14 +18,14 @@
 /* -------------------------------------------------------------------------- */
 :root {
   --header-img: url("../../resources/media/img/backgrounds/headers/new_header.jpg");
-  --nav-bg: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 75%);
+  --nav-bg: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 75%);
   --nav-btn-bg-color: white;
 }
 
 body {
   color: black;
   background-color: white;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 kbd {
@@ -62,15 +62,6 @@ table tr td:first-child {
 table tr th {
   background: #eee;
   border-top: 1px solid #bbb;
-}
-
-.btn-link {
-  color: #333;
-  border: 1px solid #bbb;
-}
-
-.btn-link:hover {
-  background-color: #eee;
 }
 
 .collection_search-bar {
