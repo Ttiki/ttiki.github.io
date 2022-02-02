@@ -1,11 +1,12 @@
 window.onload = function() {
-    randomIconImg()
-}
-/* -------------------------------------------------------------------------- */
-/*              PURPOSE: Parallax effect for the background image             */
-/*                                of the header                               */
-/* -------------------------------------------------------------------------- */
-document.getElementById("parallax-body").onscroll = function parallaxScrollBgImg() { 
+        randomIconImg()
+        displaySplash()
+    }
+    /* -------------------------------------------------------------------------- */
+    /*              PURPOSE: Parallax effect for the background image             */
+    /*                                of the header                               */
+    /* -------------------------------------------------------------------------- */
+document.getElementById("parallax-body").onscroll = function parallaxScrollBgImg() {
     let scrolltotop = document.scrollingElement.scrollTop
     let target = document.getElementById("parallax-header")
     let xvalue = "center"
@@ -19,16 +20,16 @@ document.getElementById("parallax-body").onscroll = function parallaxScrollBgImg
 /* -------------------------------------------------------------------------- */
 document.addEventListener('click', e => {
     const isDropdownBtn = e.target.matches("[data-dropdown-button]")
-    if(!isDropdownBtn && e.target.closest('[data-dropdown]') != null) return
-    
+    if (!isDropdownBtn && e.target.closest('[data-dropdown]') != null) return
+
     let currentDropDown
-    if(isDropdownBtn){
+    if (isDropdownBtn) {
         currentDropDown = e.target.closest('[data-dropdown]')
         currentDropDown.classList.toggle('active')
     }
 
-    document.querySelectorAll("[data-dropdown].active").forEach(dropdown =>{
-        if(dropdown === currentDropDown)return
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+        if (dropdown === currentDropDown) return
         dropdown.classList.remove('active')
     })
 })
@@ -38,7 +39,7 @@ document.addEventListener('click', e => {
 /*                   resrouces>media>img>icons>ttiki folder                   */
 /*              And assign it to the icon logo in the header div              */
 /* -------------------------------------------------------------------------- */
-function randomIconImg(){
+function randomIconImg() {
     //Select img eleme,t
     const icon_imgDiv = document.getElementById("ttiki-logo-header-icon")
 
@@ -58,9 +59,39 @@ function randomIconImg(){
 /*                   PURPOSE: Open or closes the mobile nav                   */
 /* -------------------------------------------------------------------------- */
 function openNav() {
-  document.getElementById("mobile-nav").style.width = "100%";
+    document.getElementById("mobile-nav").style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("mobile-nav").style.width = "0";
+    document.getElementById("mobile-nav").style.width = "0";
+}
+
+/* -------------------------------------------------------------------------- */
+/*        GLOBAL Purpose: Display a random splash text on page loading.       */
+/*                 Reading from slpash.txt in resources folder                */
+/* -------------------------------------------------------------------------- */
+
+function displaySplash() {
+
+    /*List of splashes
+    Will bepopulated by splashList.txt later.*/
+    var splashList = []
+    var splashListSize
+    var randSplashNumber
+    var randSplash
+    const splashTitle = document.getElementById("splash-subtitles")
+
+    if (splashTitle != null) {
+
+        /* -------------------------------------------------------------------------- */
+        splashList = loadTxtFile("resources/splash.txt")
+
+        splashListSize = splashList.length
+        randSplashNumber = Math.floor(Math.random() * splashListSize)
+        randSplash = splashList[randSplashNumber]
+        console.log("Random splash " + randSplash + " (n°" + randSplashNumber + ")")
+        delete splashList //Save memory by deleting the arr, we won't need it anymore
+
+        splashTitle.innerHTML = readString(randSplash)
+    }
 }

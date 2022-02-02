@@ -312,6 +312,7 @@ header {
   transition: all 2s;
   mix-blend-mode: exclusion;
   text-shadow: 2px 2px 0px #333;
+  margin-bottom: 50px;
 }
 
 #main-title:hover {
@@ -399,7 +400,8 @@ nav .info-grid-solo .nav-link:hover {
   text-decoration: underline;
 }
 
-nav .nav-dropdown.active, nav .nav-dropdown:hover > .nav-link + .nav-dropdown-menu {
+nav .nav-dropdown.active,
+nav .nav-dropdown:hover > .nav-link + .nav-dropdown-menu {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);

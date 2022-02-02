@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Ttiki's HUB RSS Feed</title>
+        <link>https://ttiki.github.io/</link>
+        <description>Ttiki's HUB latest news RSS feed. Get's the latest news without connecting 
+            to the website!
+        </description>
+        <language>en-us</language>
+    </channel>
+    <item>
+        <title>Welcome to this new 2.0 page!</title>
+        <pubDate></pubDate>
+        <description>Welcome to my personnal GitHub page v2.0.0 §gTtiki's HUB§r</description>
+    </item>
+</rss>
