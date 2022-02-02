@@ -19,11 +19,34 @@
     <meta name="robots" content="index, follow">
 
     <!-- Links tags -->
+    <!--CSS links-->
+    <!--Bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media_queries.css">
-    <!-- <link rel="stylesheet" href="css/header.css"> -->
-
+    <!--Themes (nights, days, custom seasonal themes, etc.)-->
+    <link rel="stylesheet" id="themeClass" href="css/themes/light.css">
+    <!--Icon link-->
     <link rel="icon" href="resources/media/icon/ttiki-logo.ico">
+
+    <!-- Javascript scripts -->
+    <!--Call to js-->
+    <!--JQuery import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Bootstrap import-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--TODO CLEAN THIS IMPORT AND USE DEFER OR ASYNC WHEN NECESSARY BEFORE RELEASE!-->
+    <!--Custom scripts-->
+    <!--Custom components-->
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <!--Utilities-->
+    <script src="js/Utility/file_manager.js" defer></script>
+    <script src="js/Utility/string_manager.js" defer></script>
+    <script src="js/Utility/miscellaneous_utility.js" defer></script>
+    <script src="js/Utility/switch_modes.js" defer></script>
+    <!--Misc custom imports-->
+    <script src="js/header_effects.js" defer></script>
 
     <!-- Others tags -->
     <title>Ttiki's HUB - ❓About</title>
@@ -34,7 +57,7 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header class="page-header" id="parallax-header"></header>
+    <header-component></header-component>
 
     <section>
         <article>
@@ -44,12 +67,19 @@
         </article>
 
         <article>
-            <h1>About me & this page</h1>
-
-            <h2 id="me">About me</h2>
-            <p class="text-format">Hello, my name is Clément also known as 'Ttiki' on the internet. I was born on the 9th of March 2001 in Bayonne (French side of the Basque country). I've been making my first games and programs when I was 9 years old (§iapproximately§r).<br/>                I've always been fascinated by sciences & most importantly computers. I've pursue science studies in high-school, specializing in engineer sciences. I'm now in my third year in university specialized in computer science. <br/> Since 2020
-                (§i9th of March§r), I've launched my game studio. I've started working on my first game §gTwisted Minds§r. I've also started working with four of my friends on an alchool mobile game §gOlives & Mines§r, as a joke and for fun.</p>
-            <h2 id="ttiki-hub">About this website</h2>
+            <h1 id="me">About me</h1>
+            <p class="text-format">Kaxio! <br /> My name is Clément, also known as Ttiki on the internet. I was born in 2001, in Bayonne, Basque country (well technically it's France... well... it's complicated.). In 2021 I became a Lord of Sealand!<br /> I am a software engineer,
+                game maker, mod maker, 3D/2D-ish artist, writer, (voice actor from time to time), blogger, to make it simple, I do a lot of things.<br /> I've studied 3 years in college to get my bachelor degree in computer science, and I have started
+                my studio on the 9th of March 2020.<br />
+                <br /> I've always been passionate in making stories and computers, that was pretty evident I wanted to work as a developer and more precisely as a game developer. I've started programming when I was around maybe 10 years old (I can't
+                really remember when honestly, it may have been prior to my 10th birthday, but I'm honestly am not sure.) And on second of January 2015 I've published my first Source map for Garry's mod Garry's Mod | Brick House (Garry's Mod | Brick House).
+                It was pretty lame, I've started learning mapping for the Source engine for maybe a year. <br /> I've been making little games for me since, and, on the 9th of March 2020 I've started my studio as said above, but also started building
+                my first public, commercial game Twisted Minds. ( It has been canceled for now )<br />
+                <br /> I've always been searching for more knowledge. Everyday is a new possibility of learning and discovering about new stuff. Since my youngest age I was picked up by science, becoming a scientist became my all time dream. Now, I don't
+                know if studies in computer science made me a scientist, but there is still the word science in it so I would say I've accomplished this dream ;)</p>
+        </article>
+        <article>
+            <h1 id="ttiki-hub">About this website</h1>
             <p class="text-format">You will find here:</p>
             <ul>
                 <li>Codes experimentations</li>
@@ -61,7 +91,6 @@
                 <li>A list of movies with links</li>
                 <li>A list of every games I've finished over the year over on my <a href="" title="Twitch channel" class="fr-only">Twitch channel</a></li>
             </ul>
-            <a href="about.html" title="❓About" class="btn-link">Learn more...</a>
         </article>
     </section>
     <footer>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Redacted&display=swap');
+
 /* -------------------------------------------------------------------------- */
 
 
@@ -9,16 +11,37 @@
 $highlight_bg-color: #eee;
 $default_border-color: #bbb;
 $highlight-dark-grey: #333;
-$bg-color: rgb(255, 255, 255);
+$bg-color: rgb(255,
+255,
+255);
 $game-collection-search-bar_border-color: #00aeff86;
 $link-panel_shadow-color: #00aeff86;
 $table-th_bg-color: #24292f;
-$color: green;
-$btn-link-colors: (--green: #008000, --red:#c80000, --purple:#9600ff, --yellow: #ffff00, --orange:#ffc800, --white: white); //$game-collection-search-bar_border-color: #00aeff86;
+$btn-link-colors: (--green: #008000,
+--red:#c80000,
+--purple:#9600ff,
+--yellow: #ffff00,
+--orange:#ffc800,
+--white: white); //$game-collection-search-bar_border-color: #00aeff86;
 
 /* ------------------------- Minecraft color palete ------------------------- */
 
-$colors: ( c-1: #BE0000, c-2: #FE3F3F, c-3: #D9A334, c-4: #FEFE3F, c-5: #00BE00, c-6: #3FFE3F, c-7: #00BEBE, c-8: #0000BE, c-9: #3F3FFE, c-a: #FE3FFE, c-b: #BE00BE, c-c: #FFFFFF, c-d: #BEBEBE, c-e: #3F3F3F, c-f: #000000, );
+$colors: ( c-1: #BE0000,
+c-2: #FE3F3F,
+c-3: #D9A334,
+c-4: #FEFE3F,
+c-5: #00BE00,
+c-6: #3FFE3F,
+c-7: #00BEBE,
+c-8: #0000BE,
+c-9: #3F3FFE,
+c-a: #FE3FFE,
+c-b: #BE00BE,
+c-c: #FFFFFF,
+c-d: #BEBEBE,
+c-e: #3F3F3F,
+c-f: #000000,
+);
 
 /* -------------------------------------------------------------------------- */
 
@@ -31,9 +54,13 @@ $colors: ( c-1: #BE0000, c-2: #FE3F3F, c-3: #D9A334, c-4: #FEFE3F, c-5: #00BE00,
 
 /* -------------------------------------------------------------------------- */
 
-$bg-color_night: rgb(25, 25, 25);
+$bg-color_night: rgb(25,
+25,
+25);
 $default_border-color_night: #444;
-$highlight_bg-color_night: rgb(35, 35, 35);
+$highlight_bg-color_night: rgb(35,
+35,
+35);
 
 /* -------------------------------------------------------------------------- */
 
@@ -89,4 +116,17 @@ $link-panel_transition-time: .3s;
 $link-panel_resize: 1.25;
 $default_border-radius: 7px;
 $nb-item-game-grid: 5;
-$symbols: ( home: "🏠", wrench: "🛠", games: "🎮", book: "📕", movies: "🎥", books: "📚", warning: "⚠️", nuclear: "☢️", biological: "☣️", forbiden: "🚫", forbiden2: "⛔", question: "❓", internet: "🌐", clipboard: "📋");
+$symbols: ( home: "🏠",
+wrench: "🛠",
+games: "🎮",
+book: "📕",
+movies: "🎥",
+books: "📚",
+warning: "⚠️",
+nuclear: "☢️",
+biological: "☣️",
+forbiden: "🚫",
+forbiden2: "⛔",
+question: "❓",
+internet: "🌐",
+clipboard: "📋");

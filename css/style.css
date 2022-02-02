@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Redacted&display=swap");
 /* -------------------------------------------------------------------------- */
 /*                                   COLORS                                   */
 /* -------------------------------------------------------------------------- */
@@ -17,6 +18,7 @@
 /* -------------------------------------------------------------------------- */
 /*                                MISCELLANEOUS                               */
 /* -------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Redacted&display=swap");
 /* -------------------------------------------------------------------------- */
 /*                                   COLORS                                   */
 /* -------------------------------------------------------------------------- */
@@ -645,37 +647,37 @@ table tr:last-child td:last-child {
 .btn-link.--green {
   background-color: #008000;
   border-color: #004d00;
-  color: white !important;
+  color: #eee !important;
 }
 
 .btn-link.--red {
   background-color: #c80000;
   border-color: #950000;
-  color: white !important;
+  color: #eee !important;
 }
 
 .btn-link.--purple {
   background-color: #9600ff;
   border-color: #7800cc;
-  color: white !important;
+  color: #eee !important;
 }
 
 .btn-link.--yellow {
   background-color: #ffff00;
   border-color: #cccc00;
-  color: white !important;
+  color: #eee !important;
 }
 
 .btn-link.--orange {
   background-color: #ffc800;
   border-color: #cca000;
-  color: white !important;
+  color: #eee !important;
 }
 
 .btn-link.--white {
   background-color: white;
   border-color: #e6e6e6;
-  color: black !important;
+  color: #333 !important;
 }
 
 /* ---------------------------------- Input --------------------------------- */
@@ -751,7 +753,7 @@ table tr:last-child td:last-child {
 }
 
 .c-m {
-  font-family: "System Gras", "Courier Normal", "Fixedsys Normal", Consolas;
+  font-family: 'Press Start 2P', cursive;
   color: #FEFE3F;
   animation: minecraftTextPulsating, .5s, infinite;
   -webkit-animation: minecraftTextPulsating, .5s, infinite;
@@ -763,6 +765,10 @@ table tr:last-child td:last-child {
 
 .c-i {
   font-style: italic;
+}
+
+.c-x {
+  font-family: 'Redacted', cursive;
 }
 
 #formatting-rules-table td:first-child {

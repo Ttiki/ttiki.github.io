@@ -134,10 +134,10 @@ table {
             border-color: darken($val, 10%);
             //Dynamically change the color text for better readability
             @if (lightness($val) > 60) {
-                color: black!important;
+                color: $highlight-dark-grey!important;
             }
             @else {
-                color: white!important;
+                color: $highlight_bg-color!important;
             }
         }
     }
@@ -203,7 +203,7 @@ table {
 }
 
 .c-m {
-    font-family: "System Gras", "Courier Normal", "Fixedsys Normal", Consolas;
+    font-family: 'Press Start 2P', cursive;
     color: map-get($colors, c-4);
     animation: minecraftTextPulsating, .5s, infinite;
     -webkit-animation: minecraftTextPulsating, .5s, infinite;
@@ -215,6 +215,10 @@ table {
 
 .c-i {
     font-style: italic;
+}
+
+.c-x {
+    font-family: 'Redacted', cursive;
 }
 
 #formatting-rules-table td:first-child {
