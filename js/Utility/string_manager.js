@@ -3,11 +3,11 @@ const textParagraphRandom = document.getElementsByClassName("c-k")
 const textParagraphDate = document.getElementsByClassName("c-n")
 
 const formattingRulesTable = document.getElementById("formatting-rules-table")
-/* -------------------------------------------------------------------------- */
-/*          Pupose: scan every tag with a class name of "text-format"         */
-/*                               Then format it.                              */
-/* -------------------------------------------------------------------------- */
-if(formattingRulesTable != null){
+    /* -------------------------------------------------------------------------- */
+    /*          Pupose: scan every tag with a class name of "text-format"         */
+    /*                               Then format it.                              */
+    /* -------------------------------------------------------------------------- */
+if (formattingRulesTable != null) {
     console.log("Formatting rule table found!")
     populateTable()
 }
@@ -21,12 +21,12 @@ Object.entries(textParagraph).forEach(paragraph => {
 /*            Purpose: read every <span> with a class name of "c-k"           */
 /*                         to randomize its character                         */
 /* -------------------------------------------------------------------------- */
-window.onload = setInterval(function(){
+window.onload = setInterval(function() {
     Object.entries(textParagraphRandom).forEach(paragraph => {
         const paragraphText = paragraph[1].innerText
         paragraph[1].innerHTML = stringRandomizer(paragraphText)
     })
-    Object.entries(textParagraphDate).forEach(paragraph=>{
+    Object.entries(textParagraphDate).forEach(paragraph => {
         const paragraphText = paragraph[1].innerText
         paragraph[1].innerHTML = stringToDate(paragraphText)
     })
@@ -37,11 +37,11 @@ window.onload = setInterval(function(){
 /*   This function also reads a json file containing every "§" rules to add   */
 /*                         correct <span> to the code.                        */
 /* -------------------------------------------------------------------------- */
-function readString(string){
+function readString(string) {
 
     //If no string as arg => exit
-    if(string == undefined){
-        console.log("Missing splash string as arg") 
+    if (string == undefined) {
+        console.log("Missing splash string as arg")
         return false
     }
     const stringLength = string.length
@@ -52,36 +52,36 @@ function readString(string){
     let isNeedFormat = false
 
     //Cutting our string into slices for each different § rule encounter.
-    for(let charPos = 0; charPos <= stringLength-1; charPos++){
+    for (let charPos = 0; charPos <= stringLength - 1; charPos++) {
         curChar = string.charAt(charPos)
 
-        if(curChar == "§"){
+        if (curChar == "§") {
             isNeedFormat = true
             code = ""
             splicedString.push(stringSlice)
             stringSlice = []
         }
         stringSlice.push(curChar)
-    }   
+    }
     splicedString.push(stringSlice)
 
-    if(isNeedFormat){
+    if (isNeedFormat) {
         //Reading through all the different rules in the json and formatting each slice.
         splicedString.forEach(slice => {
             Object.entries(s_rulesJson.rules).forEach(rule => {
-                //If rule encounter
-                if(rule[1].placeholder == slice[0] + slice[1]){ 
-                    //Formatting
-                    console.log("%cTRUE, FORMATING", "font-weight: bold")
-                    slice.splice(0, 2)
-                    slice.unshift(rule[1].code)
-                    slice.push("</span>")
-                }
-            })
-            //We compile each formatted slice into the final code string
-            code += slice.join('') 
+                    //If rule encounter
+                    if (rule[1].placeholder == slice[0] + slice[1]) {
+                        //Formatting
+                        //console.log("%cTRUE, FORMATING", "font-weight: bold")
+                        slice.splice(0, 2)
+                        slice.unshift(rule[1].code)
+                        slice.push("</span>")
+                    }
+                })
+                //We compile each formatted slice into the final code string
+            code += slice.join('')
         })
-    }   
+    }
 
 
     return code
@@ -92,10 +92,10 @@ function readString(string){
 /*               Avoid as much as possible as using the §k as it              */
 /*                         needs to run every "frame"                         */
 /* -------------------------------------------------------------------------- */
-function stringRandomizer(string){
+function stringRandomizer(string) {
     //If no string as arg => exit
-    if(string == undefined){
-        console.log("Missing splash string as arg") 
+    if (string == undefined) {
+        console.log("Missing splash string as arg")
         return false
     }
     const randCharArr = loadTxtFile("resources/randChar.txt")
@@ -107,7 +107,7 @@ function stringRandomizer(string){
     let randChar
 
 
-    for(let i = 0; i < stringLength; i++){
+    for (let i = 0; i < stringLength; i++) {
         randChar = Math.floor(Math.random() * charLibraryLength)
         newString[i] = randCharArr[randChar]
     }
@@ -117,10 +117,10 @@ function stringRandomizer(string){
 /* -------------------------------------------------------------------------- */
 /*                   PURPOSE: Change string to current date                   */
 /* -------------------------------------------------------------------------- */
-function stringToDate(string){
+function stringToDate(string) {
     //If no string as arg => exit
-    if(string == undefined){
-        console.log("Missing splash string as arg") 
+    if (string == undefined) {
+        console.log("Missing splash string as arg")
         return false
     }
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -135,7 +135,7 @@ function stringToDate(string){
 /*             Populates the table automaticaly with the code, an             */
 /*                          example and a description                         */
 /* -------------------------------------------------------------------------- */
-function populateTable(){
+function populateTable() {
     console.log("Populating...")
     const formattingRulesTableBody = document.getElementById("formatting-rules-table-body")
 

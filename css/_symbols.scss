@@ -1,4 +1,4 @@
-img::before{
+img::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -6,11 +6,10 @@ img::before{
     height: $panel-link_height;
     background-image: url('../resources/media/img/nomediaavailable.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+    //background-size: 100% 100%;
 }
 
-.fr-only::before{
+.fr-only::before {
     content: "";
     display: inline-block;
     background: url('../resources/media/img/icons/flags/fr.gif') no-repeat bottom;
@@ -19,7 +18,7 @@ img::before{
     margin: 0;
 }
 
-.eng-only::before{
+.eng-only::before {
     content: "";
     content: "";
     display: inline-block;
@@ -29,7 +28,7 @@ img::before{
     margin: 0;
 }
 
-.mixed-fr_gb::before{
+.mixed-fr_gb::before {
     content: "";
     display: inline-block;
     background: url('../resources/media/img/icons/flags/mixed-fr_gb.gif') no-repeat bottom;
@@ -38,8 +37,9 @@ img::before{
     margin: 0;
 }
 
-@each $key, $val in $symbols{
-    .icon-#{$key}::before{
+@each $key,
+$val in $symbols {
+    .icon-#{$key}::before {
         content: $val;
         display: inline-block;
         width: 25px;
@@ -47,4 +47,4 @@ img::before{
         margin: 0;
         font-weight: normal;
     }
-}  
+}

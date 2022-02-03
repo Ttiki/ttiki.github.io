@@ -126,7 +126,8 @@ table {
     text-decoration: none;
     cursor: pointer;
     border-radius: $default_border-radius;
-    border: 2px solid;
+    border: 1px solid;
+    transition: .2s;
     @each $key,
     $val in $btn-link-colors {
         &.#{$key} {
@@ -139,7 +140,16 @@ table {
             @else {
                 color: $highlight_bg-color!important;
             }
+            //This hover action darken the color
+            &:hover {
+                background-color: darken($val, 7%);
+                border-color: darken($val, 10%);
+            }
         }
+    }
+    //This hover action is called if no colour is selected for your button.
+    &:hover {
+        background-color: darken(white, 20%);
     }
 }
 
@@ -150,16 +160,13 @@ table {
     border-radius: $game-collection-search-bar_radius;
     font-size: $game-collection-search-bar_font-size;
     padding: $game-collection-search-bar_padding;
-    width: 25%;
+    width: 100%;
+    margin: auto;
     &:focus {
         outline: none;
         -webkit-box-shadow: 0px 0px $game-collection-search-bar_shadow-spread $game-collection-search-bar_shadow-blur $game-collection-search-bar_border-color;
         box-shadow: 0px 0px $game-collection-search-bar_shadow-spread $game-collection-search-bar_shadow-blur $game-collection-search-bar_border-color;
         border: $game-collection-search-bar_border-size solid $game-collection-search-bar_border-color;
-    }
-    &-softwares {
-        @extend .collection_search-bar;
-        font-size: 20px;
     }
 }
 

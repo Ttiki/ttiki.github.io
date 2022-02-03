@@ -39,8 +39,8 @@
     <!--TODO CLEAN THIS IMPORT AND USE DEFER OR ASYNC WHEN NECESSARY BEFORE RELEASE!-->
     <!--Custom scripts-->
     <!--Custom components-->
-    <script src="js/components/header.js"></script>
-    <script src="js/components/footer.js"></script>
+    <script src="js/components/header.js" type="module"></script>
+    <script src="js/components/footer.js" type="module"></script>
     <!--Utilities-->
     <script src="js/Utility/file_manager.js" defer></script>
     <script src="js/Utility/string_manager.js" defer></script>
@@ -86,14 +86,9 @@
                 <li>A list of every games I've finished over the year over on my <a href="" title="Twitch channel" class="fr-only">Twitch channel</a></li>
             </ul>
             <a href="about.html" title="❓About" class="btn-link --green">Learn more...</a>
-            <a href="about.html" title="❓About" class="btn-link --white">TEST</a>
         </article>
     </section>
-    <footer>
-        <div class="licence">
-            <p>Flags icons by <a href="http://www.famfamfam.com/lab/icons/flags/" title="Flags icon licence">FamFamFam</a></a>.</p>
-        </div>
-    </footer>
+    <footer-component></footer-component>
 </body>
 
 </html>

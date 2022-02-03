@@ -8,7 +8,7 @@ function loadJson(jsonFile) {
     let xmlhttp = new XMLHttpRequest()
     xmlhttp.open("GET", jsonFile, false)
     xmlhttp.send()
-    if (xmlhttp.status==200) {
+    if (xmlhttp.status == 200) {
         var result = xmlhttp.responseText
     }
     return JSON.parse(result)
@@ -24,13 +24,13 @@ function loadTxtFile(filePath) {
     let xmlhttp = new XMLHttpRequest()
     xmlhttp.open("GET", filePath, false)
     xmlhttp.send()
-    if (xmlhttp.status==200) {
+    if (xmlhttp.status == 200) {
         const lines = xmlhttp.responseText.split('\n')
-        const linesLength = lines.length 
-        for(let line = 0; line < linesLength; line++){
+        const linesLength = lines.length
+        for (let line = 0; line < linesLength; line++) {
             result.push(lines[line])
         }
-      
+
     }
     return result
 }

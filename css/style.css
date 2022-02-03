@@ -96,7 +96,6 @@ img::before {
   height: 80%;
   background-image: url("../resources/media/img/nomediaavailable.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .fr-only::before {
@@ -641,7 +640,9 @@ table tr:last-child td:last-child {
   text-decoration: none;
   cursor: pointer;
   border-radius: 7px;
-  border: 2px solid;
+  border: 1px solid;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .btn-link.--green {
@@ -650,10 +651,20 @@ table tr:last-child td:last-child {
   color: #eee !important;
 }
 
+.btn-link.--green:hover {
+  background-color: #005c00;
+  border-color: #004d00;
+}
+
 .btn-link.--red {
   background-color: #c80000;
   border-color: #950000;
   color: #eee !important;
+}
+
+.btn-link.--red:hover {
+  background-color: #a40000;
+  border-color: #950000;
 }
 
 .btn-link.--purple {
@@ -662,10 +673,20 @@ table tr:last-child td:last-child {
   color: #eee !important;
 }
 
+.btn-link.--purple:hover {
+  background-color: #8100db;
+  border-color: #7800cc;
+}
+
 .btn-link.--yellow {
   background-color: #ffff00;
   border-color: #cccc00;
   color: #eee !important;
+}
+
+.btn-link.--yellow:hover {
+  background-color: #dbdb00;
+  border-color: #cccc00;
 }
 
 .btn-link.--orange {
@@ -674,29 +695,40 @@ table tr:last-child td:last-child {
   color: #eee !important;
 }
 
+.btn-link.--orange:hover {
+  background-color: #dbac00;
+  border-color: #cca000;
+}
+
 .btn-link.--white {
   background-color: white;
   border-color: #e6e6e6;
   color: #333 !important;
 }
 
+.btn-link.--white:hover {
+  background-color: #ededed;
+  border-color: #e6e6e6;
+}
+
+.btn-link:hover {
+  background-color: #cccccc;
+}
+
 /* ---------------------------------- Input --------------------------------- */
-.collection_search-bar, .collection_search-bar-softwares {
+.collection_search-bar {
   border-radius: 4px;
   font-size: 28px;
   padding: 12px 24px;
-  width: 25%;
+  width: 100%;
+  margin: auto;
 }
 
-.collection_search-bar:focus, .collection_search-bar-softwares:focus {
+.collection_search-bar:focus {
   outline: none;
   -webkit-box-shadow: 0px 0px 4px 4px #00aeff86;
   box-shadow: 0px 0px 4px 4px #00aeff86;
   border: 1px solid #00aeff86;
-}
-
-.collection_search-bar-softwares {
-  font-size: 20px;
 }
 
 /* ----------------------------- Clear divs size ---------------------------- */

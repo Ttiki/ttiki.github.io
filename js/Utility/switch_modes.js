@@ -2,7 +2,6 @@ var now = new Date();
 var sunSetTime = new Date();
 var sunRiseTime = new Date();
 
-console.log("Actual month is :" + now.getMonth());
 switch (now.getMonth()) {
     case 6 || 5: //July or June
         sunRiseTime.setHours(6);
@@ -32,7 +31,6 @@ switch (now.getMonth()) {
 
 //We check if the actual date is lower to the sunset hour
 if (now.getHours() > sunSetTime.getHours() || now.getHours() < sunRiseTime.getHours()) {
-    console.log("Switching to night mode!");
     //Set style properties for each day element
     document.getElementById("themeClass").href = "css/themes/dark.css"
 }
