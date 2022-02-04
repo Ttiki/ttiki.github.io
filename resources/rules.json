@@ -21,6 +21,7 @@
         { "placeholder": "§k", "code": "<span class=c-k>", "description": "Randomize the text every few milliseconds" },
         { "placeholder": "§r", "code": "<span class=c-r>", "description": "Reset the old format" },
         { "placeholder": "§n", "code": "<span class=c-n>", "description": "Show the date" },
-        { "placeholder": "$x", "code": "<span class=c-x>", "description": "Redact the text" }
+        { "placeholder": "§x", "code": "<span class=c-x>", "description": "Redact the text" },
+        { "placeholder": "§y", "code": "<span class=c-y>", "description": "Display the current year" }
     ]
 }
