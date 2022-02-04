@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Redacted&display=swap");
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+/* ------------------------- Minecraft color palete ------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                          Night mode color version                          */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                            Width, height & sizes                           */
+/* -------------------------------------------------------------------------- */
+/* ------------------------ Big Ttitle letter spacing ----------------------- */
+/* ------------------------------ link-panel ------------------------------ */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                MISCELLANEOUS                               */
+/* -------------------------------------------------------------------------- */
+@-webkit-keyframes slideInFromBottom {
+  0% {
+    margin-top: 120px;
+  }
+  100% {
+    margin-top: 100px;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    margin-top: 120px;
+  }
+  100% {
+    margin-top: 100px;
+  }
+}
+
+@-webkit-keyframes minecraftTextPulsating {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 22px;
+  }
+}
+
+@keyframes minecraftTextPulsating {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 22px;
+  }
+}
+
+header {
+  /* This section calls the slideInFromLeft animation we defined above */
+  -webkit-animation: 5s ease-out 0s 1 slideInFromLeft;
+          animation: 5s ease-out 0s 1 slideInFromLeft;
+}
+
+/* ----------------------------- Formatting span ---------------------------- */
+.c-k {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.c-m {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEFE3F;
+  text-shadow: 1px 1px 1px #000000;
+  padding: 1px;
+  animation: .5s minecraftTextPulsating infinite alternate;
+  -moz-animation: .5s minecraftTextPulsating infinite alternate;
+  -webkit-animation: .5s minecraftTextPulsating infinite alternate;
+  -o-animation: .5s minecraftTextPulsating infinite alternate;
+}
+
+.c-g {
+  font-weight: bold;
+}
+
+.c-i {
+  font-style: italic;
+}
+
+.c-x {
+  font-family: 'Redacted', cursive;
+}
+
+#formatting-rules-table td:first-child {
+  font-size: 18px;
+  text-align: center;
+}
+
+#formatting-rules-table td:nth-child(2) {
+  text-align: center;
+}
+
+/* --------------------------------- § Color -------------------------------- */
+.c-1 {
+  color: #BE0000;
+}
+
+.c-2 {
+  color: #FE3F3F;
+}
+
+.c-3 {
+  color: #D9A334;
+}
+
+.c-4 {
+  color: #FEFE3F;
+}
+
+.c-5 {
+  color: #00BE00;
+}
+
+.c-6 {
+  color: #3FFE3F;
+}
+
+.c-7 {
+  color: #00BEBE;
+}
+
+.c-8 {
+  color: #0000BE;
+}
+
+.c-9 {
+  color: #3F3FFE;
+}
+
+.c-a {
+  color: #FE3FFE;
+}
+
+.c-b {
+  color: #BE00BE;
+}
+
+.c-c {
+  color: #FFFFFF;
+}
+
+.c-d {
+  color: #BEBEBE;
+}
+
+.c-e {
+  color: #3F3F3F;
+}
+
+.c-f {
+  color: #000000;
+}
+/*# sourceMappingURL=custom_formatting.css.map */

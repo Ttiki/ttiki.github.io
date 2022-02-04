@@ -1,0 +1,50 @@
+@import '_animations';
+
+/* ----------------------------- Formatting span ---------------------------- */
+
+.c-k {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.c-m {
+    font-family: 'Press Start 2P', cursive;
+    color: map-get($colors, c-4);
+    text-shadow: 1px 1px 1px #000000;
+    padding: 1px;
+    animation: .5s minecraftTextPulsating infinite alternate;
+    -moz-animation: .5s minecraftTextPulsating infinite alternate;
+    -webkit-animation: .5s minecraftTextPulsating infinite alternate;
+    -o-animation: .5s minecraftTextPulsating infinite alternate;
+}
+
+.c-g {
+    font-weight: bold;
+}
+
+.c-i {
+    font-style: italic;
+}
+
+.c-x {
+    font-family: 'Redacted', cursive;
+}
+
+#formatting-rules-table td:first-child {
+    font-size: 18px;
+    text-align: center;
+}
+
+#formatting-rules-table td:nth-child(2) {
+    text-align: center;
+}
+
+
+/* --------------------------------- § Color -------------------------------- */
+
+@each $key,
+$val in $colors {
+    .#{$key} {
+        color: $val;
+    }
+}
