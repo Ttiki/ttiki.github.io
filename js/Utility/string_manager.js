@@ -1,6 +1,7 @@
 const textParagraph = document.getElementsByClassName("text-format")
 const textParagraphRandom = document.getElementsByClassName("c-k")
 const textParagraphDate = document.getElementsByClassName("c-n")
+const textParagraphYear = document.getElementsByClassName("c-y")
 
 const formattingRulesTable = document.getElementById("formatting-rules-table")
     /* -------------------------------------------------------------------------- */
@@ -21,16 +22,15 @@ Object.entries(textParagraph).forEach(paragraph => {
 /*            Purpose: read every <span> with a class name of "c-k"           */
 /*                         to randomize its character                         */
 /* -------------------------------------------------------------------------- */
+//We call this function every 20ms
+
 window.onload = setInterval(function() {
     Object.entries(textParagraphRandom).forEach(paragraph => {
         const paragraphText = paragraph[1].innerText
         paragraph[1].innerHTML = stringRandomizer(paragraphText)
     })
-    Object.entries(textParagraphDate).forEach(paragraph => {
-        const paragraphText = paragraph[1].innerText
-        paragraph[1].innerHTML = stringToDate(paragraphText)
-    })
 }, 20)
+
 
 /* -------------------------------------------------------------------------- */
 /*      Purpose: Read a string, then format it if it's using "§" symbols.     */
@@ -129,6 +129,15 @@ function stringToDate(string) {
     return string
 }
 
+function stringToCurrentYear(string) {
+    if (string == undefined) {
+        console.log("Missing splash string as arg")
+        return false
+    }
+    string = new Date().getFullYear();
+    return string;
+}
+
 /* -------------------------------------------------------------------------- */
 /*             Purpose: Automaticaly write the rules table for the            */
 /*                           formatting rules page.                           */
@@ -152,3 +161,17 @@ function populateTable() {
         description.innerHTML = rule[1].description
     })
 }
+
+Object.entries(textParagraphDate).forEach(paragraph => {
+
+        const paragraphText = paragraph[1].innerText
+        paragraph[1].innerHTML = stringToDate(paragraphText)
+    })
+    /* -------------------------------------------------------------------------- */
+    /*            Purpose: read every <span> with a class name of "c-k"           */
+    /*                         to randomize its character                         */
+    /* -------------------------------------------------------------------------- */
+Object.entries(textParagraphYear).forEach(paragraph => {
+    const paragraphText = paragraph[1].innerText
+    paragraph[1].innerHTML = stringToCurrentYear(paragraphText)
+})
