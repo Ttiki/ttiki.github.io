@@ -1,14 +1,16 @@
 <header class="page-header" id="parallax-header">
     <span class="mobile-burger-button" onclick="openNav()">&#9776;</span>
     <div id="titles-subtitles">
-        <a href="index.html" title="🏠Home page"><img id="ttiki-logo-header-icon" src="" alt="" /></a>
+        <a href="index.html" title="Home page"><img id="ttiki-logo-header-icon" src="" alt="" /></a>
         <h1 id="main-title" class="main-title">TTIKI'S HUB</h1>
         <h3 id="splash-subtitles"></h3>
     </div>
     <nav>
+        <!--Mobile nav drawer-->
         <div id="mobile-nav" class="mobile-nav">
             <a href="javascript:void(0)" class="mobile-nav-closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html" title="🏠Home page" class="icon-home">Home</a>
+            <a href="index.html" title="Ttiki's HUB"><img src="../resources/media/img/ttikishub-logo.png" id="ttikis-hub-logo-nav" alt="Ttiki's HUB logo" /></a>
+            <a href="index.html" title="Home page" class="icon-home">Home</a>
             <div class="grid-section">
                 <h1 class="mobile-nav-grid-section-heading icon-question">About</h1>
                 <div class="mobile-nav-grid-section">
@@ -28,11 +30,20 @@
                 </div>
             </div>
             <hr/>
-            <a href="la-bibliotheque.html" class="fr-only " title="📚La bibliothèque">La bibliothèque</a>
-            <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new" title="🌐Social networks board">🌐The Social Networks board</a>
+            <div class="grid-section">
+                <h1 class="mobile-nav-grid-section-heading icon-heart">Support me</h1>
+                <div class="mobile-nav-grid-section">
+                    <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" title="Follow me!" target="new" title="Social networks board">🌐The Social Networks board</a>
+                    <a href="support-me/donations.html" title="Support me financialy" class="nav-link icon-money">Donate</a>
+                </div>
+            </div>
+            <hr/>
+            <a href="la-bibliotheque.html" class="fr-only " title="La bibliothèque">La bibliothèque</a>
         </div>
+        <!--Default nav browser (desktop & big screens)-->
         <div class="default-nav">
-            <a href="index.html" title="🏠Home page" class="nav-link icon-home">Home</a>
+            <a href="index.html" title="Ttiki's HUB" class="nav-link"><img src="../resources/media/img/ttikishub-logo.png" id="ttikis-hub-logo-nav" alt="Ttiki's HUB logo" /></a>
+            <a href="index.html" title="Home page" class="nav-link icon-home">Home</a>
             <div class="nav-dropdown" data-dropdown>
                 <button class="nav-link icon-question" onclick="redirectBtn('about.html')" data-dropdown-button>About</button>
                 <div class="nav-dropdown-menu">
@@ -47,15 +58,23 @@
                 <button class="nav-link icon-clipboard" onclick="redirectBtn('projects.html')" data-dropdown-button>Projects</button>
                 <div class="nav-dropdown-menu">
                     <div class="info-grid-solo">
-                        <a href="software.html" class="nav-link icon-wrench">Software</a>
-                        <a href="games.html" class="nav-link icon-games">Games</a>
-                        <a href="books.html" class="nav-link icon-book">Books</a>
-                        <a href="movies.html" class="nav-link icon-movies">Movies</a>
+                        <a href="search.html?type=software" class="nav-link icon-wrench">Software</a>
+                        <a href="search.html?type=games" class="nav-link icon-games">Games</a>
+                        <a href="search.html?type=books" class="nav-link icon-book">Books</a>
+                        <a href="search.html?type=movies" class="nav-link icon-movies">Movies</a>
                     </div>
                 </div>
             </div>
-            <a href="la-bibliotheque.html" class="fr-only nav-link" title="📚La bibliothèque">La bibliothèque</a>
-            <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" target="new" class="nav-link icon-internet" title="🌐Social networks board">The Social Networks board</a>
+            <div class="nav-dropdown" data-dropdown>
+                <button class="nav-link icon-heart" onclick="redirectBtn('support-me.html')" data-dropdown-button>Support me</button>
+                <div class="nav-dropdown-menu">
+                    <div class="info-grid-solo">
+                        <a href="https://ttiki.notion.site/c19441f7173749e3a1d5551171e69366?v=b32b95c657434bc38a46fbdd9c1acfa8" title="Follow me!" target="new" class="nav-link icon-internet" title="🌐Social networks board">The Social Networks board</a>
+                        <a href="support-me/donations.html" title="Support me financialy" class="nav-link icon-money">Donate</a>
+                    </div>
+                </div>
+            </div>
+            <a href="la-bibliotheque.html" class="fr-only nav-link" title="La bibliothèque">La bibliothèque</a>
         </div>
     </nav>
 </header>
