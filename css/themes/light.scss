@@ -58,8 +58,10 @@ nav {
     background-color: white;
     background: rgb(255, 255, 255);
     background: $nav-bg;
-    .nav-link {
-        background-color: $nav-bg;
+    .nav-link,
+    .nav-dropdown {
+        //We must do this to force transparency on button nav link. (Dropdown menus)
+        background-color: rgba(0, 0, 0, 0);
         color: $highlight-dark-grey;
     }
     .nav-dropdown-menu {

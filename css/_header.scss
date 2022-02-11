@@ -85,7 +85,11 @@ nav {
         padding: 0;
         display: flex;
     }
+    .nav-dropdown {
+        height: 56px;
+    }
     .nav-link {
+        height: 56px;
         padding: 1em;
         margin: 0;
         font-family: inherit;
@@ -101,7 +105,8 @@ nav {
     }
     //Ttiki's HUB logo
     #ttikis-hub-logo-nav {
-        height: 26px;
+        //width: %;
+        height: 16px;
         margin: 0;
         padding: 0;
     }

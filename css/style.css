@@ -245,6 +245,24 @@ img::before {
   font-weight: normal;
 }
 
+.icon-me::before {
+  content: "🙋‍♂️";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.icon-format::before {
+  content: "📎";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  margin: 0;
+  font-weight: normal;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
@@ -334,7 +352,12 @@ nav .default-nav {
   display: flex;
 }
 
+nav .nav-dropdown {
+  height: 56px;
+}
+
 nav .nav-link {
+  height: 56px;
   padding: 1em;
   margin: 0;
   font-family: inherit;
@@ -352,7 +375,7 @@ nav .nav-link:hover {
 }
 
 nav #ttikis-hub-logo-nav {
-  height: 26px;
+  height: 16px;
   margin: 0;
   padding: 0;
 }

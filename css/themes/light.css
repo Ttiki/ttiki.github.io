@@ -64,8 +64,9 @@ nav {
   background: linear-gradient(180deg, white 0%, #ebebeb 75%);
 }
 
-nav .nav-link {
-  background-color: linear-gradient(180deg, white 0%, #ebebeb 75%);
+nav .nav-link,
+nav .nav-dropdown {
+  background-color: rgba(0, 0, 0, 0);
   color: #333;
 }
 

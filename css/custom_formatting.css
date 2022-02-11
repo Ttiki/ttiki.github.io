@@ -42,7 +42,7 @@
 }
 
 .c-m {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', consolas, cursive;
   color: #FEFE3F;
   text-shadow: 1px 1px 1px #000000;
   padding: 1px;
