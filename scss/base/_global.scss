@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------------- */
+
+
+/*                                   COLORS                                   */
+
+
+/* -------------------------------------------------------------------------- */
+// Primary default theme colors
+$text: #dedede;
+$background: #222222;
+$secondary-background: #333333;
+$primary: #850000;
+$secondary: #c11818;
+$accent: #049100;
+
+$linearPrimarySecondary: linear-gradient(#575757, #b2b2b3);
+$linearPrimaryAccent: linear-gradient(#575757, #850000);
+$linearSecondaryAccent: linear-gradient(#b2b2b3, #850000);
+$radialPrimarySecondary: radial-gradient(#575757, #b2b2b3);
+$radialPrimaryAccent: radial-gradient(#575757, #850000);
+$radialSecondaryAccent: radial-gradient(#b2b2b3, #850000);
+
+// Secondary light mode colors
+$light-text: #212121;
+$light-background: #e7e7f4;
+$light-primary: #a8a8a8;
+$light-secondary: #4c4c4d;
+$light-accent: #ff7a7a;
+
+$default_border-color: #bbb;
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                            Width, height & sizes                           */
+
+
+/* -------------------------------------------------------------------------- */
+$default_border-radius: 7px;
+$nb-item-game-grid: 5;
+$article-side-padding: 12px;
+$article-top-padding: 12px;

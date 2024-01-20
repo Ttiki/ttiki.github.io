@@ -1,0 +1,58 @@
+//Button colors
+$btn-link-colors: (--green: #008000,
+--red:#c80000,
+--purple:#9600ff,
+--yellow: #ffff00,
+--orange:#ffc800,
+--white: white,
+--black: black,
+--blue: #0000ff,
+--grey: #808080,
+--pink: #ff00ff,
+--brown: #a52a2a,
+--cyan: #00ffff,
+--darkblue: #000080,
+--darkcyan: #008080,
+--darkgrey: #a9a9a9,
+--darkgreen: #006400,
+--darkmagenta: #8b008b,
+--darkred: #8b0000,
+--lightgreen: #90ee90,
+--lightgrey: #d3d3d3,
+--lightred: #ff0000,);
+
+.btn-link {
+    //margin: -10px 5px 5px 0;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: $default_border-radius;
+    border: 1px solid;
+    transition: .2s;
+    @each $key,
+    $val in $btn-link-colors {
+        &.#{$key} {
+            background-color: #{$val};
+            border-color: darken($val, 10%);
+            //Dynamically change the color text for better readability
+            @if (lightness($val) > 60) {
+                color: var(--clr-text-100)!important;
+            }
+            @else {
+                color: var(--clr-text-100)!important;
+            }
+            //This hover action darken the color
+            &:hover {
+                background-color: darken($val, 7%);
+                border-color: darken($val, 10%);
+            }
+        }
+    }
+    //This hover action is called if no colour is selected for your button.
+    &:hover {
+        background-color: darken(white, 20%);
+    }
+}

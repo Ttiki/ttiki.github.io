@@ -1,0 +1,79 @@
+//Use
+@use 'sass:color';
+
+//Imports
+//Importing base components scss files
+@import 'base/_global';
+@import 'base/_root';
+@import "base/_animations";
+@import "base/_typography";
+
+//Importing layout components scss files
+@import "layout/_header";
+@import "layout/_blog";
+@import "layout/_footer";
+
+//Components
+@import "components/_toggleButton";
+@import "components/_buttonLinks";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    z-index: 0;
+    margin: 0;
+    background: var(--clr-background-100);
+    color: var(--clr-text-100);
+    font-family: $font-default;
+    font-weight: $font-default-weight;
+}
+
+kbd {
+    border-radius: 3px;
+    border: 1px solid $default_border-color;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+//When hovered, the title should space with a letter-spacing of $hover-spacing with a smooth transition 
+h1 {
+    padding: 1rem;
+    font-family: $font-default;
+    font-weight: $font-bigtitle-weight;
+    font-size: 3.5em;
+}
+
+h2 {
+    padding: 1rem;
+    font-family: $font-default;
+    font-weight: $font-title-weight;
+    font-size: 2em;
+}
+
+h3 {
+    padding: 1rem;
+    font-family: $font-default;
+    font-weight: $font-title-weight;
+    font-size: 1.5em;
+    margin: 1rem;
+}
+
+h4 {
+    padding: 1rem;
+    font-family: $font-default;
+    font-weight: $font-title-weight;
+    font-size: 1.2em;
+    margin: 1rem;
+}
+

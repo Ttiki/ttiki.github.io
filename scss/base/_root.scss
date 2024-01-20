@@ -1,0 +1,33 @@
+@import '../themes/dark';
+@import '../themes/light';
+
+// Themes
+$current-theme: 'dark';
+
+:root {
+    $active-theme: dark;
+  
+    @each $color, $shade in $active-theme {
+      @each $prop, $value in $shade {
+        --clr-#{$color}-#{$prop}: #{$value};
+      }
+    }
+  }
+
+  //Changing to dark theme
+  html[data-theme='dark'] {
+    @each $color, $shade in $dark {
+      @each $prop, $value in $shade {
+        --clr-#{$color}-#{$prop}: #{$value};
+      }
+    }
+  }
+
+  //Changing to light theme
+  html[data-theme='light'] {
+    @each $color, $shade in $light {
+      @each $prop, $value in $shade {
+        --clr-#{$color}-#{$prop}: #{$value};
+      }
+    }
+  }
