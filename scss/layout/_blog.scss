@@ -2,7 +2,7 @@
     padding: 32px;
     article {
         width: 70%;
-        margin: 25px auto;
+        margin: 64px auto;
         border: 1px solid var(--clr-background-700);
         border-radius: $default_border-radius;
         //padding: .5em .7em;
@@ -36,7 +36,7 @@
             justify-content: space-between;
             align-items: center;
             .right-wrap{
-                width: 9%;
+                min-width: 9%;
                 border-left: 1px solid var(--clr-background-700);
                 text-align: center;
                 //padding: $article-top-padding $article-side-padding;

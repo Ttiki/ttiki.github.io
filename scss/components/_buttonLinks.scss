@@ -38,11 +38,19 @@ $btn-link-colors: (--green: #008000,
             background-color: #{$val};
             border-color: darken($val, 10%);
             //Dynamically change the color text for better readability
-            @if (lightness($val) > 60) {
-                color: var(--clr-text-100)!important;
+            //TODO : Take this code back from the old v2 version and fix it!
+            // @if (lightness($val) > 25) {
+            //     color: var(--clr-background-100)!important;
+            // }
+            // @else {
+            //     color: var(--clr-text-100)!important;
+            // }
+            @if ($current-theme=='dark') {
+                color: map-get(map-get($map: $dark, $key: 'text'), $key: '100')
+            
             }
             @else {
-                color: var(--clr-text-100)!important;
+                color: map-get(map-get($map: $dark, $key: 'text'), $key: '100')
             }
             //This hover action darken the color
             &:hover {
