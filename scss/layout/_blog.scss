@@ -26,25 +26,37 @@
                 max-height: 512px;
                 margin: auto;
             }
+            .tag-pill {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                //margin-right: 4px;
+                vertical-align: middle; // Ajouter cette ligne pour aligner les pastilles avec le texte
+                
+              }
             h3{
                 margin: 0;
-                padding: $article-top-padding $article-side-padding;
-            }
-        }
-        .blogentry-title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .right-wrap{
-                min-width: 9%;
-                border-left: 1px solid var(--clr-background-700);
-                text-align: center;
                 //padding: $article-top-padding $article-side-padding;
-                font-size: 2em;
-                margin: 0;
-
+                display: inline-block;
+                vertical-align: middle; // Ajouter cette ligne pour aligner le titre avec les pastilles
             }
         }
+        // .blogentry-title{
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     .right-wrap{
+        //         min-width: 9%;
+        //         border-left: 1px solid var(--clr-background-700);
+        //         text-align: center;
+        //         //padding: $article-top-padding $article-side-padding;
+        //         font-size: 2em;
+        //         margin: 0;
+
+        //     }
+        // }
+       
         .blogentry-content {
             background-color: var(--clr-background-200);
             margin: 0;

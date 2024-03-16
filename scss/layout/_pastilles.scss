@@ -1,0 +1,40 @@
+
+// Définir le style de base des pastilles
+.tag-pill {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  cursor: help;
+}
+
+// Définir le style du pop-up d'aide
+.tag-pill::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: -10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tag-pill:hover::after {
+  opacity: 1;
+}
+
+// Utiliser une boucle pour générer les styles pour chaque pastille
+@each $tag-name, $tag-data in $tag-colors {
+  .tag-#{$tag-name} {
+    background-color: map-get($tag-data, "color");
+
+    &::after {
+      content: '"' + map-get($tag-data, "name") + '"';
+      background-color: map-get($tag-data, "color");
+    }
+  }
+}

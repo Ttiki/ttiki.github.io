@@ -29,6 +29,22 @@ $light-accent: #ff7a7a;
 
 $default_border-color: #bbb;
 
+// Définir la map des couleurs des pastilles et des noms des tags correspondants
+$tag-colors: (
+  "technologie": (
+    "color": #007bff,
+    "name": "Technologie"
+  ),
+  "science": (
+    "color": #28a745,
+    "name": "Science"
+  ),
+  "education": (
+    "color": #dc3545,
+    "name": "Éducation"
+  )
+);
+
 /* -------------------------------------------------------------------------- */
 
 

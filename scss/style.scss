@@ -12,6 +12,7 @@
 @import "layout/_header";
 @import "layout/_blog";
 @import "layout/_footer";
+@import "layout/_pastilles";
 
 //Components
 @import "components/_toggleButton";
@@ -77,3 +78,6 @@ h4 {
     margin: 1rem;
 }
 
+hr{
+    border: 1px solid var(--clr-background-300);
+}

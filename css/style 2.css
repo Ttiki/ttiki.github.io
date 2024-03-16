@@ -416,17 +416,21 @@ header nav .search-close {
   max-height: 512px;
   margin: auto;
 }
-.blog article .blogentry-header .tag-pill, .blog article .blogentry-title .tag-pill {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  vertical-align: middle;
-}
 .blog article .blogentry-header h3, .blog article .blogentry-title h3 {
   margin: 0;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 12px 12px;
+}
+.blog article .blogentry-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog article .blogentry-title .right-wrap {
+  min-width: 9%;
+  border-left: 1px solid var(--clr-background-700);
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
 }
 .blog article .blogentry-content {
   background-color: var(--clr-background-200);
@@ -465,56 +469,6 @@ footer p {
   text-align: center;
   font-size: smaller;
   color: var(--clr-text-500);
-}
-
-.tag-pill {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-right: 10px;
-  position: relative;
-  cursor: help;
-}
-
-.tag-pill::after {
-  content: "";
-  position: absolute;
-  left: 30px;
-  top: -10px;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tag-pill:hover::after {
-  opacity: 1;
-}
-
-.tag-technologie {
-  background-color: #007bff;
-}
-.tag-technologie::after {
-  content: '"Technologie"';
-  background-color: #007bff;
-}
-
-.tag-science {
-  background-color: #28a745;
-}
-.tag-science::after {
-  content: '"Science"';
-  background-color: #28a745;
-}
-
-.tag-education {
-  background-color: #dc3545;
-}
-.tag-education::after {
-  content: '"Éducation"';
-  background-color: #dc3545;
 }
 
 /* The switch - the box around the slider */
